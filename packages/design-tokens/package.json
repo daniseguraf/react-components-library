@@ -1,0 +1,17 @@
+{
+  "name": "@daniseguraf/design-tokens",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "files": [
+    "build"
+  ],
+  "scripts": {
+    "build": "node_modules/.bin/style-dictionary build",
+    "start": "yarn build && chokidar  \"src/**/*.json\" -c \"yarn build\""
+  },
+  "devDependencies": {
+    "chokidar-cli": "^2.1.0",
+    "style-dictionary": "^2.10.2"
+  }
+}
