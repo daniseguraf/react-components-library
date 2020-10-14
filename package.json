@@ -11,13 +11,10 @@
     "packages": [
       "packages/*",
       "playground/*"
-    ],
-    "nohoist": [
-      "**/normalize-scss"
     ]
   },
   "scripts": {
-    "start": "yarn lerna run dev",
+    "start": "yarn lerna run start",
     "build": "yarn lerna run build"
   }
 }

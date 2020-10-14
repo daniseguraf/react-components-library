@@ -1,11 +1,16 @@
 import React, { FC } from "react";
 
-interface ButtonProps {
-  label: string;
+export interface ButtonProps
+  extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+  kind?: "primary" | "ghost";
 }
 
-const Button: FC<ButtonProps> = ({ label }) => (
-  <button className="dse-button-container">{label} - Button</button>
-);
+const Button: FC<ButtonProps> = ({ children, kind, ...other }) => {
+  return (
+    <button kind={kind} {...other}>
+      {children}
+    </button>
+  );
+};
 
 export default Button;

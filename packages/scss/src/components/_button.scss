@@ -1,0 +1,46 @@
+.ds-btn {
+  font-family: sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 1px solid red;
+  line-height: 1;
+  padding: 14px 15px;
+
+  &:active,
+  &:focus {
+    outline: none;
+  }
+
+  &:disabled,
+  &:disabled:hover {
+    color: #737581;
+    background: #e1e1e1;
+    border: 1px solid #e1e1e1;
+    cursor: not-allowed;
+  }
+
+  &-primary {
+    color: #ffffff;
+    background: #e4036a;
+    border: 1px solid #e4036a;
+
+    &:hover,
+    &:active {
+      background: #c8025c;
+      border: 1px solid #c8025c;
+    }
+  }
+
+  &-secondary {
+    color: #4a4b53;
+    background: #ffffff;
+    border: 1px solid #4a4b53;
+
+    &:hover,
+    &:active {
+      color: #ffffff;
+      background: #4a4b53;
+      border: 1px solid #4a4b53;
+    }
+  }
+}
