@@ -1,16 +1,6 @@
-import styled from "styled-components";
-import theme from "./../../themes/default";
+import React, { FC } from "react";
 
-const Input = styled.input`
-  border: 1px solid ${theme.formControl.borderColor};
-  border-radius: ${theme.borderRadius};
-  color: ${theme.color.text.dark};
-  display: block;
-  height: auto;
-  margin-bottom: 1rem;
-  padding: ${theme.formControl.padding};
-  width: 100%;
-`;
+const Input: FC = () => <input className="ds-input" type="text" />;
 
 Input.defaultProps = {
   type: "text",

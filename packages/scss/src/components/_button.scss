@@ -2,9 +2,9 @@
   font-family: sans-serif;
   font-size: 1rem;
   font-weight: 500;
-  border-radius: 1px solid red;
+  border-radius: 1px solid #000;
   line-height: 1;
-  padding: 14px 15px;
+  padding: 16px 15px;
 
   &:active,
   &:focus {
@@ -20,9 +20,10 @@
   }
 
   &-primary {
-    color: #ffffff;
-    background: #e4036a;
-    border: 1px solid #e4036a;
+    color: var(--ds-btn-primary-color);
+    background: var(--ds-btn-primary-bg);
+    border: 1px solid var(--ds-btn-primary-bg-hover);
+    border-radius: var(--border-md);
 
     &:hover,
     &:active {

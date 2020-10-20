@@ -6,11 +6,7 @@ export interface ButtonProps
 }
 
 const Button: FC<ButtonProps> = ({ children, kind, ...other }) => {
-  return (
-    <button kind={kind} {...other}>
-      {children}
-    </button>
-  );
+  return <button className="ds-btn ds-btn-primary">{children}</button>;
 };
 
 export default Button;

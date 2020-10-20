@@ -1,0 +1,13 @@
+.ds-card {
+  height: auto;
+  background: #ffffff;
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ececec;
+  border-radius: 8px;
+  width: 100%;
+
+  &-body {
+    padding: 1rem;
+    background: #ffffff;
+  }
+}

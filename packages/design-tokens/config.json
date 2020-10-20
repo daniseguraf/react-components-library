@@ -1,5 +1,5 @@
 {
-  "source": ["src/theme-1/**/*.json"],
+  "source": ["src/**/*.json"],
   "platforms": {
     "scss": {
       "transformGroup": "scss",

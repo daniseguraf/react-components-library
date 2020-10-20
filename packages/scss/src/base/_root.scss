@@ -1,34 +1,13 @@
 :root {
-  --dse-body-text-color: #{$dark};
-  --dse-body-bg-color: #{$white};
+  --ds-btn-primary-color: #{$white};
+  --ds-btn-primary-bg: #{$theme-1-color-red-500};
+  --ds-btn-primary-bg-hover: #{$theme-1-color-red-500};
+  --border-md: 0;
+}
 
-  --dse-btn-primary-color: #{$white};
-  --dse-btn-primary-bg: #{$green};
-  --dse-btn-primary-bg-hover: #{$green-light};
-
-  --dse-btn-secondary-color: #{$white};
-  --dse-btn-secondary-bg: #{$dark};
-
-  --dse-form-color: #{$dark};
-  --dse-form-bg: #{$white};
-  --dse-form-error-color: #{$red};
-  --dse-form-error-border: #{$red};
-  --dse-form-border-focus-color: #{$green};
-
-  --dse-body-font-size: #{$fs-base};
-  --dse-body-font-weight: #{$fw-normal};
-
-  --dse-h1-font-size: #{$h-1};
-  --dse-h2-font-size: #{$h-2};
-  --dse-h3-font-size: #{$h-3};
-  --dse-h4-font-size: #{$h-4};
-  --dse-h5-font-size: #{$h-5};
-  --dse-h6-font-size: #{$h-6};
-
-  --dse-h1-font-weight: #{$fw-medium};
-  --dse-h2-font-weight: #{$fw-medium};
-  --dse-h3-font-weight: #{$fw-medium};
-  --dse-h4-font-weight: #{$fw-normal};
-  --dse-h5-font-weight: #{$fw-normal};
-  --dse-h6-font-weight: #{$fw-light};
+.theme-1 {
+  --ds-btn-primary-color: #{$theme-2-color-blue-50};
+  --ds-btn-primary-bg: #{$theme-2-color-blue-400};
+  --ds-btn-primary-bg-hover: #{$theme-2-color-blue-900};
+  --border-md: 8px;
 }
