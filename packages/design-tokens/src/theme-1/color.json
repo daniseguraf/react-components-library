@@ -1,7 +1,7 @@
 {
   "theme-1": {
     "color": {
-      "red": {
+      "green": {
         "50": { "value": "#FFE5EE", "attributes": { "font": "base" } },
         "100": { "value": "#FFCDD2", "attributes": { "font": "base" } },
         "200": { "value": "#EF9A9A", "attributes": { "font": "base" } },

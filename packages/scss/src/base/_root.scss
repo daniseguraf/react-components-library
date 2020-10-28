@@ -1,13 +1,23 @@
 :root {
+  /*=============================================
+  =                    Brand                    =
+  =============================================*/
+  --ds-color-primary: #2ea44f;
+  --ds-color-primary-hover: #2c974b;
+  --ds-color-primary-active: #2c974b;
+  --ds-color-primary-disabled: #94d3a2;
+
+  --ds-color-secondary: #fafbfc;
+  --ds-color-secondary-hover: #f3f4f6;
+  --ds-color-secondary-active: #fafbfc;
+  --ds-color-secondary-disabled: #fafbfc;
+
+  /*=============================================
+  =                    Button                   =
+  =============================================*/
+
   --ds-btn-primary-color: #{$white};
   --ds-btn-primary-bg: #{$theme-1-color-red-500};
   --ds-btn-primary-bg-hover: #{$theme-1-color-red-500};
   --border-md: 0;
-}
-
-.theme-1 {
-  --ds-btn-primary-color: #{$theme-2-color-blue-50};
-  --ds-btn-primary-bg: #{$theme-2-color-blue-400};
-  --ds-btn-primary-bg-hover: #{$theme-2-color-blue-900};
-  --border-md: 8px;
 }
