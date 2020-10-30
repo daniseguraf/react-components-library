@@ -21,58 +21,10 @@
  */
 
 /*=============================================
-=                  Colors                     =
-=============================================*/
-
-/* Brand Colors */
-$green: #5ece7b;
-$green-light: #9ee2b0;
-
-$dark: #1d1f22;
-$dark-light: #737680;
-
-/* Neutral Colors */
-
-$gray: #a3a5ad;
-$gray-light: #bebfc4;
-
-$white: #fff;
-$white-dark: #f1f2f3;
-
-/* Utility colors */
-
-$red: #d12727;
-$red-light: #f8dedf;
-
-$blue: #0468db;
-$blue-light: #b4d2f4;
-
-/*=====  End of Colors  ======*/
-
-/*=============================================
 =                Typography                   =
 =============================================*/
 
-/**
- *
- * 1) The playfair font. We'll use this for headings mostly.
- *     https://fonts.google.com/specimen/Playfair+Display
- *
- * 2) The raleway font. We'll use this for the body text.
- *     https://fonts.google.com/specimen/Raleway
- */
-
-/* Font families */
-
-$playfair: "Playfair", serif; /* 1 */
 $raleway: "Raleway", "HelveticaNeue", "Helvetica", "Arial", sans-serif; /* 2 */
-
-/* Font sizes */
-$fs-xs: 0.75rem; // 12px
-$fs-sm: 0.875rem; // 14px
-$fs-base: 1rem; // 16px
-$fs-lg: 1.125rem; // 18px
-$fs-xl: 1.5rem; // 24px
 
 /* Heading font sizes */
 $h-1: 1.375rem; // 22px
@@ -81,16 +33,6 @@ $h-3: 1rem; // 16px
 $h-4: 1.125rem; // 18px
 $h-5: 0.75rem; // 12px
 $h-6: 0.75rem; // 12px
-
-/* Font weights */
-
-$fw-light: 300;
-$fw-normal: 400;
-$fw-medium: 500;
-$fw-semibold: 600;
-$fw-bold: 700;
-$fw-extrabold: 800;
-$fw-black: 900;
 
 /*=====  End of Typography  ======*/
 
@@ -135,3 +77,37 @@ $spacing: (
 ) !default;
 
 /*=====  End of Spacing  ======*/
+
+/*=============================================
+=            Global text colors               =
+=============================================*/
+$body-text-color: var(--dse-body-text-color) !default;
+$body-bg-color: var(--dse-body-bg-color) !default;
+
+/*=============================================
+=                 Forms                       =
+=============================================*/
+$form-color: var(--dse-form-color) !default;
+$form-bg: var(--dse-form-bg) !default;
+$form-error-color: var(--dse-form-error-color) !default;
+$form-error-border: var(--dse-form-error-border) !default;
+$form-border-focus-color: var(--dse-form-border-focus-color) !default;
+
+/*=============================================
+=                 Buttons                     =
+=============================================*/
+
+$btn-font-family: var(--ds-font-family);
+$btn-font-size: var(--ds-font-size-md);
+$btn-font-weight: var(--ds-font-weight-normal);
+
+$btn-border-width: 1px;
+$btn-border-radius: var(--ds-btn-border-radius);
+
+$btn-border-color: var(--ds-color-primary);
+$btn-padding: 16px 15px;
+
+$btn-color-text-primary: var(--ds-btn-primary-text-color);
+$btn-color-primary: var(--ds-color-primary);
+$btn-color-primary-hover: var(--ds-color-primary-hover);
+$btn-color-primary-active: var(--ds-color-primary-active);

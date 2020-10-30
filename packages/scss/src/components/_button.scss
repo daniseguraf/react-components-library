@@ -1,10 +1,11 @@
 .ds-btn {
-  font-family: sans-serif;
-  font-size: 1rem;
-  font-weight: 500;
-  border-radius: 1px solid #000;
+  font-family: $btn-font-family;
+  font-size: $btn-font-size;
+  font-weight: $btn-font-weight;
+  border: $btn-border-width solid $btn-border-color;
+  border-radius: $btn-border-radius;
   line-height: 1;
-  padding: 16px 15px;
+  padding: $btn-padding;
 
   &:active,
   &:focus {
@@ -20,15 +21,18 @@
   }
 
   &-primary {
-    color: var(--ds-btn-primary-color);
-    background: var(--ds-btn-primary-bg);
-    border: 1px solid var(--ds-btn-primary-bg-hover);
-    border-radius: var(--border-md);
+    color: $btn-color-text-primary;
+    background: $btn-color-primary;
+    border: $btn-border-width solid $btn-color-primary;
 
-    &:hover,
+    &:hover {
+      background: $btn-color-primary-hover;
+      border-color: $btn-color-primary-hover;
+    }
+
     &:active {
-      background: #c8025c;
-      border: 1px solid #c8025c;
+      background: $btn-color-primary-active;
+      border-color: $btn-color-primary-active;
     }
   }
 

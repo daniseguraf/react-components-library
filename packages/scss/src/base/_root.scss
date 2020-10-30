@@ -1,7 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin&display=swap");
+
 :root {
   /*=============================================
   =                    Brand                    =
   =============================================*/
+
   --ds-color-primary: #2ea44f;
   --ds-color-primary-hover: #2c974b;
   --ds-color-primary-active: #2c974b;
@@ -12,12 +15,33 @@
   --ds-color-secondary-active: #fafbfc;
   --ds-color-secondary-disabled: #fafbfc;
 
+  --ds-font-family: "Cabin", sans-serif;
+
+  /*=============================================
+  =                Font sizes                   =
+  =============================================*/
+
+  --ds-font-size-xl: 1.5rem; // 24px
+  --ds-font-size-lg: 1.125rem; // 18px
+  --ds-font-size-md: 1rem; // 16px
+  --ds-font-size-sm: 0.875rem; // 14px
+  --ds-font-size-xs: 0.75rem; // 12px
+
+  /*=============================================
+  =                Font weights                 =
+  =============================================*/
+  --ds-font-weight-light: 300;
+  --ds-font-weight-normal: 400;
+  --ds-font-weight-medium: 500;
+  --ds-font-weight-semibold: 600;
+  --ds-font-weight-bold: 700;
+  --ds-font-weight-extrabold: 800;
+  --ds-font-weight-black: 900;
+
   /*=============================================
   =                    Button                   =
   =============================================*/
 
-  --ds-btn-primary-color: #{$white};
-  --ds-btn-primary-bg: #{$theme-1-color-red-500};
-  --ds-btn-primary-bg-hover: #{$theme-1-color-red-500};
-  --border-md: 0;
+  --ds-btn-primary-text-color: #fff;
+  --ds-btn-border-radius: 4px;
 }
