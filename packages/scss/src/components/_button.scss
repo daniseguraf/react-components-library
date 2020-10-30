@@ -37,15 +37,18 @@
   }
 
   &-secondary {
-    color: #4a4b53;
-    background: #ffffff;
-    border: 1px solid #4a4b53;
+    color: $btn-color-text-secondary;
+    background: $btn-color-secondary;
+    border: $btn-border-width solid $btn-color-secondary;
 
-    &:hover,
+    &:hover {
+      background: $btn-color-secondary-hover;
+      border-color: $btn-color-secondary-hover;
+    }
+
     &:active {
-      color: #ffffff;
-      background: #4a4b53;
-      border: 1px solid #4a4b53;
+      background: $btn-color-secondary-active;
+      border-color: $btn-color-secondary-active;
     }
   }
 }

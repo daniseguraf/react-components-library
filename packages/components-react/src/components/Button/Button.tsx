@@ -1,12 +1,28 @@
-import React, { FC } from "react";
+import React, { FC } from 'react';
+import classnames from 'classnames';
 
 export interface ButtonProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  kind?: "primary" | "ghost";
+  kind?: 'primary' | 'secondary';
 }
 
-const Button: FC<ButtonProps> = ({ children, kind, ...other }) => {
-  return <button className="ds-btn ds-btn-primary">{children}</button>;
+const Button: FC<ButtonProps> = ({ children, kind, className, ...other }) => {
+  const classList = classnames(
+    'ds-btn',
+    {
+      [`ds-btn-${kind}`]: kind,
+    },
+    className
+  );
+  return (
+    <button className={classList} {...other}>
+      {children}
+    </button>
+  );
+};
+
+Button.defaultProps = {
+  kind: 'primary',
 };
 
 export default Button;
