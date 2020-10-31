@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Cabin&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
 
 :root {
   /*=============================================
@@ -7,15 +7,15 @@
 
   --ds-color-primary: #2ea44f;
   --ds-color-primary-hover: #2c974b;
-  --ds-color-primary-active: #2c974b;
+  --ds-color-primary-active: #288b44;
   --ds-color-primary-disabled: #94d3a2;
 
   --ds-color-secondary: #fafbfc;
   --ds-color-secondary-hover: #f3f4f6;
-  --ds-color-secondary-active: #fafbfc;
+  --ds-color-secondary-active: #e7eaee;
   --ds-color-secondary-disabled: #fafbfc;
 
-  --ds-font-family: "Cabin", sans-serif;
+  --ds-font-family: 'Cabin', sans-serif;
 
   /*=============================================
   =                Font sizes                   =
@@ -42,6 +42,11 @@
   =                    Button                   =
   =============================================*/
 
-  --ds-btn-primary-text-color: #fff;
   --ds-btn-border-radius: 4px;
+
+  --ds-btn-primary-text-color: #fff;
+  --ds-color-border-primary: #21803b;
+
+  --ds-btn-secondary-text-color: #24292e;
+  --ds-color-border-secondary: #c7c7ca;
 }

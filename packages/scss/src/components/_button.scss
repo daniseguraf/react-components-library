@@ -23,32 +23,28 @@
   &-primary {
     color: $btn-color-text-primary;
     background: $btn-color-primary;
-    border: $btn-border-width solid $btn-color-primary;
+    border: $btn-border-width solid $btn-color-border-primary;
 
     &:hover {
       background: $btn-color-primary-hover;
-      border-color: $btn-color-primary-hover;
     }
 
     &:active {
       background: $btn-color-primary-active;
-      border-color: $btn-color-primary-active;
     }
   }
 
   &-secondary {
     color: $btn-color-text-secondary;
     background: $btn-color-secondary;
-    border: $btn-border-width solid $btn-color-secondary;
+    border: $btn-border-width solid $btn-color-border-secondary;
 
     &:hover {
       background: $btn-color-secondary-hover;
-      border-color: $btn-color-secondary-hover;
     }
 
     &:active {
       background: $btn-color-secondary-active;
-      border-color: $btn-color-secondary-active;
     }
   }
 }
