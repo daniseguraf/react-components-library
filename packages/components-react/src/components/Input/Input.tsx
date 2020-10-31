@@ -1,9 +1,25 @@
-import React, { FC } from "react";
+import React, { FC, useState } from 'react';
+import classnames from 'classnames';
 
-const Input: FC = () => <input className="ds-input" type="text" />;
+const Input: FC = ({ type }) => {
+  const [value, setValue] = useState('');
+
+  const classList = classnames('ds-input');
+
+  const handleValue = (e) => setValue(e.target.value);
+
+  return (
+    <input
+      className={classList}
+      type={type}
+      value={value}
+      onChange={handleValue}
+    />
+  );
+};
 
 Input.defaultProps = {
-  type: "text",
+  type: 'text',
 };
 
 export default Input;

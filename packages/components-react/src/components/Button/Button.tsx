@@ -6,7 +6,13 @@ export interface ButtonProps
   kind?: 'primary' | 'secondary';
 }
 
-const Button: FC<ButtonProps> = ({ children, kind, className, ...other }) => {
+const Button: FC<ButtonProps> = ({
+  children,
+  kind,
+  className,
+  onClick,
+  ...other
+}) => {
   const classList = classnames(
     'ds-btn',
     {
@@ -15,7 +21,7 @@ const Button: FC<ButtonProps> = ({ children, kind, className, ...other }) => {
     className
   );
   return (
-    <button className={classList} {...other}>
+    <button className={classList} onClick={onClick} {...other}>
       {children}
     </button>
   );
