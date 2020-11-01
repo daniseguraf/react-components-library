@@ -23,8 +23,4 @@ yarn-error.log*
 .vscode/
 .env
 
-/storybook-static
 /build
-dist/
-/public
-/lib
