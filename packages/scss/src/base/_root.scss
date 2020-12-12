@@ -15,7 +15,7 @@
   --ds-color-secondary-active: #e7eaee;
   --ds-color-secondary-disabled: #fafbfc;
 
-  --ds-font-family: $font-family;
+  --ds-font-family: #{$font-family};
 
   /*=============================================
   =                Font sizes                   =

@@ -12,6 +12,10 @@
     outline: none;
   }
 
+  &:hover {
+    cursor: pointer;
+  }
+
   &:disabled,
   &:disabled:hover {
     color: #737581;
@@ -45,6 +49,16 @@
 
     &:active {
       background: $btn-color-secondary-active;
+    }
+  }
+
+  // Block level button
+  &-block {
+    display: block;
+    width: 100%;
+
+    + .ds-btn-block {
+      margin-top: 8px;
     }
   }
 }
