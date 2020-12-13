@@ -1,8 +1,15 @@
 {
   "name": "@danielseguraf/react-components-library",
   "version": "0.1.0",
-  "main": "lib/index.js",
   "license": "MIT",
+  "keywords": [
+    "design system",
+    "react",
+    "CSS",
+    "SCSS"
+  ],
+  "main": "build/index.js",
+  "module": "build/index.es.js",
   "files": [
     "build"
   ],

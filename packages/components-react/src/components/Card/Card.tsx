@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import React, { FC } from 'react';
 
 const Card: FC = ({ children, ...other }) => (
   <div className="ds-card" {...other}>
