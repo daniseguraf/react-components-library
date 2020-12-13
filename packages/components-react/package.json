@@ -66,5 +66,8 @@
     "styled-components": "^5.1.1",
     "ts-jest": "^26.2.0",
     "typescript": "^3.9.7"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

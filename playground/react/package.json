@@ -13,5 +13,6 @@
   },
   "scripts": {
     "start": "parcel src/index.html -p 3000"
-  }
+  },
+  "private":"true"
 }
