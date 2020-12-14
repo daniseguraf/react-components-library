@@ -8,5 +8,6 @@ export { default as Label } from './components/Label/Label';
 export type { LabelProps } from './components/Label/Label';
 
 export { default as Card } from './components/Card/Card';
+export type { CardProps } from './components/Card/Card';
 
 export { default as CardBody } from './components/CardBody/CardBody';
