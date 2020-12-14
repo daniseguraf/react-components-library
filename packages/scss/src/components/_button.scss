@@ -1,11 +1,11 @@
 .ds-btn {
-  font-family: $btn-font-family;
-  font-size: $btn-font-size;
-  font-weight: $btn-font-weight;
-  border: $btn-border-width solid $btn-border-color;
-  border-radius: $btn-border-radius;
+  font-family: var(--ds-btn-font-family);
+  font-size: var(--ds-btn-font-size);
+  font-weight: var(--ds-btn-font-weight);
+  border: var(--dl-btn-border-width) solid transparent;
+  border-radius: var(--ds-btn-border-radius);
   line-height: 1;
-  padding: $btn-padding;
+  padding: var(--ds-btn-padding);
 
   &:active,
   &:focus {
@@ -25,30 +25,35 @@
   }
 
   &-primary {
-    color: $btn-color-text-primary;
-    background: $btn-color-primary;
-    border: $btn-border-width solid $btn-color-border-primary;
+    color: var(--ds-btn-text-primary);
+    background: var(--ds-btn-bg-color-primary);
+    border: var(--ds-btn-border-width) solid var(--ds-btn-border-color-primary);
 
     &:hover {
-      background: $btn-color-primary-hover;
+      background: var(--ds-btn-bg-color-hover-primary);
+      border-color: var(--ds-btn-border-color-hover-primary);
     }
 
     &:active {
-      background: $btn-color-primary-active;
+      background: var(--ds-btn-bg-color-active-primary);
+      border-color: var(--ds-btn-border-color-active-primary);
     }
   }
 
   &-secondary {
-    color: $btn-color-text-secondary;
-    background: $btn-color-secondary;
-    border: $btn-border-width solid $btn-color-border-secondary;
+    color: var(--ds-btn-text-secondary);
+    background: var(--ds-btn-bg-color-secondary);
+    border: var(--ds-btn-border-width) solid
+      var(--ds-btn-border-color-secondary);
 
     &:hover {
-      background: $btn-color-secondary-hover;
+      background: var(--ds-btn-bg-color-hover-secondary);
+      border-color: var(--ds-btn-border-color-hover-secondary);
     }
 
     &:active {
-      background: $btn-color-secondary-active;
+      background: var(--ds-btn-bg-color-active-secondary);
+      border-color: var(--ds-btn-border-color-active-secondary);
     }
   }
 

@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import React, { FC, useState, Fragment } from 'react';
 import Button from './Button';
 
 export default {
@@ -18,9 +18,15 @@ export const Secondary: FC = () => (
   <Button kind="secondary">Secondary button</Button>
 );
 
-export const Disabled: FC = () => (
+export const PrimaryDisabled: FC = () => (
   <Button kind="primary" disabled>
-    Disabled button
+    Primary disabled
+  </Button>
+);
+
+export const SecondaryDisabled: FC = () => (
+  <Button kind="secondary" disabled>
+    Secondary disabled
   </Button>
 );
 
@@ -34,6 +40,25 @@ export const BlockButton: FC = () => (
     </Button>
   </div>
 );
+
+export const Events: FC = () => {
+  const [event, setEvent] = useState(null);
+
+  const handleEvent = (e: React.SyntheticEvent<HTMLButtonElement>) => {
+    setEvent(e.type);
+  };
+
+  return (
+    <Fragment>
+      <Button onClick={handleEvent} onFocus={handleEvent} onBlur={handleEvent}>
+        Primary Button
+      </Button>
+      <br />
+      <br />
+      <pre>Event: {event ? event : '--'}</pre>
+    </Fragment>
+  );
+};
 
 export const MoreProps: FC = () => {
   return (

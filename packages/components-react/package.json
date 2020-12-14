@@ -3,10 +3,10 @@
   "version": "0.1.2",
   "license": "MIT",
   "keywords": [
-    "design system",
     "react",
-    "CSS",
-    "SCSS"
+    "typescript",
+    "SCSS",
+    "CSS"
   ],
   "main": "build/index.js",
   "module": "build/index.es.js",
@@ -73,6 +73,11 @@
     "styled-components": "^5.1.1",
     "ts-jest": "^26.2.0",
     "typescript": "^3.9.7"
+  },
+  "peerDependencies": {
+    "@danielseguraf/css": ">=0.1.1",
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0"
   },
   "publishConfig": {
     "access": "public"

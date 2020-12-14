@@ -4,27 +4,31 @@ import classnames from 'classnames';
 export interface ButtonProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   /**
-   * Tipo de botón
+   * Type of button
    */
   kind?: 'primary' | 'secondary';
   /**
-   * Clases CSS opcionales que pueden ser agregadas
+   * Optional CSS classes
    */
   className?: string;
   /**
-   * Habilita botones de tipo bloque
+   * Enable block button
    */
   isBlock?: boolean;
   /**
-   * Callback que se dispara al hacer click en el componente
+   * Enable disabled button
+   */
+  disabled?: boolean;
+  /**
+   * Trigger a callback when the component is clicked
    */
   onClick?: (e: React.MouseEvent<HTMLButtonElement>) => void;
   /**
-   * Callback que se dispara al mantener apretado el componente
+   * Trigger a callback when the component is holding down
    */
   onFocus?: (e: React.FocusEvent<HTMLButtonElement>) => void;
   /**
-   * Callback que se dispara al salir del componente
+   * Trigger a callback when the user leaving the component
    */
   onBlur?: (e: React.FocusEvent<HTMLButtonElement>) => void;
 }

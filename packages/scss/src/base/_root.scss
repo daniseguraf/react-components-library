@@ -15,7 +15,7 @@
   --ds-color-secondary-active: #e7eaee;
   --ds-color-secondary-disabled: #fafbfc;
 
-  --ds-font-family: #{$font-family};
+  --ds-font-family: 'Cabin', 'HelveticaNeue', 'Helvetica', 'Arial', sans-serif;
 
   /*=============================================
   =                Font sizes                   =
@@ -42,11 +42,52 @@
   =                    Button                   =
   =============================================*/
 
+  // font family
+  --ds-btn-font-family: var(--ds-font-family);
+
+  // border width
+  --ds-btn-border-width: 1px;
+
+  // letter spacing
+  --ds-btn-letter-spacing: 0;
+
+  // border radius
   --ds-btn-border-radius: 4px;
 
-  --ds-btn-primary-text-color: #fff;
-  --ds-color-border-primary: #21803b;
+  // font size
+  --ds-btn-font-size: var(--ds-font-size-md);
 
-  --ds-btn-secondary-text-color: #24292e;
-  --ds-color-border-secondary: #c7c7ca;
+  // font weight
+  --ds-btn-font-weight: var(--ds-font-weight-normal);
+
+  // padding
+  --ds-btn-padding: 11px 12px;
+
+  // text color
+  --ds-btn-text-primary: #fff;
+  --ds-btn-text-secondary: #24292e;
+
+  // background color
+  --ds-btn-bg-color-primary: var(--ds-color-primary);
+  --ds-btn-bg-color-secondary: var(--ds-color-secondary);
+
+  // background color hover
+  --ds-btn-bg-color-hover-primary: var(--ds-color-primary-hover);
+  --ds-btn-bg-color-hover-secondary: var(--ds-color-secondary-hover);
+
+  // background color active
+  --ds-btn-bg-color-active-primary: var(--ds-color-primary-active);
+  --ds-btn-bg-color-active-secondary: var(--ds-color-secondary-active);
+
+  // border color
+  --ds-btn-border-color-primary: var(--ds-color-primary);
+  --ds-btn-border-color-secondary: #c7c7ca;
+
+  // border color hover
+  --ds-btn-border-color-hover-primary: var(--ds-color-primary-hover);
+  --ds-btn-border-color-hover-secondary: #c7c7ca;
+
+  // border color active
+  --ds-btn-border-color-active-primary: var(--ds-color-primary-active);
+  --ds-btn-border-color-active-secondary: #c7c7ca;
 }
