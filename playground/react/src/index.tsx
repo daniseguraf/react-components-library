@@ -1,10 +1,7 @@
-import React from "react";
-import ReactDOM from "react-dom";
+import React from 'react';
+import ReactDOM from 'react-dom';
 
-import "@monorepo/scss/lib/Button.css";
-import { Button } from "@monorepo/react";
+import '@danielseguraf/css/build/css/index.css';
+import App from './App';
 
-ReactDOM.render(
-  <Button label="Example button" />,
-  document.querySelector("#root")
-);
+ReactDOM.render(<App />, document.querySelector('#root'));
