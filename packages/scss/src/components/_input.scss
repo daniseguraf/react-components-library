@@ -1,10 +1,34 @@
-.ds-input {
-  border: 1px solid red;
-  border-radius: 8px;
-  color: red;
+.ds-text-input {
+  background: #ffffff;
+  border: 1px solid #e1e4e8;
+  border-radius: 6px;
+  box-sizing: border-box;
+  color: #24292e;
   display: block;
-  height: auto;
-  margin-bottom: 1rem;
-  padding: 16px;
-  // width: 100%;
+  height: 40px;
+  padding: 6px 8px;
+  box-shadow: inset 0px 2px 0px rgba(225, 228, 232, 0.2);
+  font-size: 16px;
+  line-height: 1.43;
+  width: 100%;
+  outline: none;
+
+  &:focus {
+    border-color: #0366d6;
+    box-shadow: 3px -3px 0px #bad1f4, -3px 3px 0px #bad1f4, 3px 3px 0px #bad1f4,
+      -3px -3px 0px #bad1f4;
+  }
+
+  &:disabled {
+    background: #f6f8fa;
+    border-color: #e1e4e8;
+    box-shadow: inset 0px 2px 0px rgba(225, 228, 232, 0.2);
+    color: #6a737d;
+  }
+  &.ds-is-valid {
+    border-color: #3aa71f;
+  }
+  &.ds-is-invalid {
+    border-color: #d73a49;
+  }
 }

@@ -97,7 +97,7 @@ const Input: FC<InputProps> = React.forwardRef<HTMLInputElement, InputProps>(
     const [inputValue, setInputValue] = useState(INITIAL_VALUE);
 
     const inputClasses = classNames(
-      'ds-form-control',
+      'ds-text-input',
       {
         'ds-is-valid': isValid,
         'ds-is-invalid': isInvalid,
@@ -139,7 +139,6 @@ const Input: FC<InputProps> = React.forwardRef<HTMLInputElement, InputProps>(
         className={inputClasses}
         aria-label={ariaLabel}
         placeholder={placeholder}
-        readOnly={readOnly}
         onChange={(e) => {
           handleChange(e);
           onChange && onChange(e);
