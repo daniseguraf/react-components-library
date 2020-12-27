@@ -6,20 +6,45 @@ export interface NavbarProps extends React.HTMLAttributes<HTMLElement> {
    * Fixed nabvar
    */
   isFixed?: boolean;
-
+  /**
+   * Background Color
+   */
+  backgroundColor?: string;
   /**
    * Optional CSS classes
    */
   className?: string;
 }
 
-const Navbar: FC = ({ children, className, ...other }) => {
-  const stylelist = classNames('ds-navbar', {}, className);
+const Navbar: FC<NavbarProps> = ({
+  children,
+  isFixed,
+  backgroundColor,
+  className,
+  ...other
+}) => {
+  const stylelist = classNames(
+    'ds-navbar',
+    {
+      'ds-navbar-fixed': isFixed,
+    },
+    className
+  );
+
   return (
-    <nav className={stylelist} {...other}>
+    <nav
+      className={stylelist}
+      style={{ backgroundColor: backgroundColor }}
+      {...other}
+    >
       {children}
     </nav>
   );
+};
+
+Navbar.defaultProps = {
+  isFixed: false,
+  backgroundColor: '#FFFFFF',
 };
 
 export default Navbar;

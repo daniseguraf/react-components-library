@@ -1,11 +1,12 @@
 .ds-navbar {
   width: 100%;
   display: flex;
-  align-content: center;
+  align-items: center;
   justify-content: space-between;
-  padding: 16px;
-  background: pink;
-  border-bottom: 1px solid red;
+  padding: 8px 16px;
+  background: #ffffff;
+  box-sizing: border-box;
+  height: 48px;
 
   &-fixed {
     position: fixed;

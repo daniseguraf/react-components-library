@@ -7,6 +7,9 @@ export type { CardProps } from './components/Card/Card';
 export { default as CardBody } from './components/CardBody/CardBody';
 export type { CardBodyProps } from './components/CardBody/CardBody';
 
+export { default as Navbar } from './components/Navbar/Navbar';
+export type { NavbarProps } from './components/Navbar/Navbar';
+
 export { default as Input } from './components/Input/Input';
 export type { InputProps } from './components/Input/Input';
 

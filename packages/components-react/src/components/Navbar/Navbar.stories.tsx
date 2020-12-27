@@ -7,12 +7,30 @@ export default {
 };
 
 export const Default: FC = () => (
-  <div style={{ width: '400px' }}>
+  <div style={{ backgroundColor: '#949494', padding: '6px' }}>
     <Navbar>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
-      excepturi provident voluptatibus praesentium quod perferendis ullam
-      aliquam atque, nulla consequatur at temporibus laudantium adipisci labore
-      necessitatibus vitae, distinctio officia laborum.
+      <div>Logo</div>
+      <ul className="docs-ul">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+      </ul>
+      <div>Login</div>
+    </Navbar>
+  </div>
+);
+
+export const BackgroundColor: FC = () => (
+  <div style={{ backgroundColor: '#949494', padding: '6px' }}>
+    <Navbar backgroundColor="#dedbde">
+      <div>Logo</div>
+      <ul className="docs-ul">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+      </ul>
     </Navbar>
   </div>
 );
