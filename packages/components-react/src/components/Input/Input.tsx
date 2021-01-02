@@ -97,7 +97,7 @@ const Input: FC<InputProps> = React.forwardRef<HTMLInputElement, InputProps>(
     const [inputValue, setInputValue] = useState(INITIAL_VALUE);
 
     const inputClasses = classNames(
-      'ds-text-input',
+      'ds-input',
       {
         'ds-is-valid': isValid,
         'ds-is-invalid': isInvalid,

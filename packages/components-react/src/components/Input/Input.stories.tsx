@@ -6,6 +6,6 @@ export default {
   title: 'Components / Input',
 };
 
-export const Default: FC = () => <Input placeholder="Name" />;
+export const Standard: FC = () => <Input label="First Name" />;
 
-export const Label: FC = () => <Input label="Nombre" />;
+export const Label: FC = () => <Input />;

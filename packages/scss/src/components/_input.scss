@@ -1,6 +1,6 @@
-.ds-text-input {
+.ds-input {
   background: #ffffff;
-  border: 1px solid #e1e4e8;
+  border: 1px solid #999b9e;
   border-radius: 6px;
   box-sizing: border-box;
   color: #24292e;
@@ -31,4 +31,8 @@
   &.ds-is-invalid {
     border-color: #d73a49;
   }
+}
+
+.ds-form-group {
+  margin-bottom: 1rem;
 }
