@@ -16,7 +16,7 @@
   "scripts": {
     "start": "start-storybook -p 6006  -s public",
     "start:watch": "nodemon --watch src/components --exec yarn build -e tsx",
-    "build-storybook": "build-storybook -s public",
+    "build-storybook": "build-storybook -o ./storybook-static",
     "lint": "eslint . --ext .ts,.tsx,.jsx",
     "test": "jest",
     "test:watch": "jest --watch --coverage",
