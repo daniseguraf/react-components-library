@@ -35,4 +35,10 @@
 
 .ds-form-group {
   margin-bottom: 1rem;
+
+  label {
+    display: block;
+    font-size: 0.875rem;
+    margin-bottom: 4px;
+  }
 }

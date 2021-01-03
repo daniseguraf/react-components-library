@@ -6,6 +6,10 @@ export default {
   title: 'Components / Input',
 };
 
-export const Standard: FC = () => <Input label="First Name" />;
+export const Standard: FC = () => (
+  <div className="ds-form-group">
+    <Input label="First Name" />
+  </div>
+);
 
 export const Label: FC = () => <Input />;
