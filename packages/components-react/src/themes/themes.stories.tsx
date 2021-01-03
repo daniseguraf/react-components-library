@@ -1,13 +1,13 @@
-import React, { FC, useEffect, useState, useRef } from "react";
-import Button from "./../components/Button";
+import React, { FC, useState } from 'react';
+import Button from './../components/Button';
 
 export default {
   component: Button,
-  title: "Themes / Button",
+  title: 'Themes / Button',
 };
 
 export const Primary: FC = () => {
-  const [value, setValue] = useState("");
+  const [value, setValue] = useState('');
   const handlerSelect = (e) => setValue(e.target.value);
 
   return (
