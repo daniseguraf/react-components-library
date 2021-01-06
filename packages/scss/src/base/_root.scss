@@ -2,18 +2,49 @@
 
 :root {
   /*=============================================
+  =                    Tokens                   =
+  =============================================*/
+
+  --flickr-pink: #f72585ff;
+  --byzantine: #b5179eff;
+  --purple: #7209b7ff;
+  --purple-2: #560badff;
+  --trypan-blue: #480ca8ff;
+  --trypan-blue-2: #3a0ca3ff;
+  --persian-blue: #3f37c9ff;
+  --ultramarine-blue: #4361eeff;
+  --dodger-blue: #4895efff;
+  --vivid-sky-blue: #4cc9f0ff;
+
+  --blue: #2d00f7ff;
+  --electric-indigo: #6a00f4ff;
+  --electric-violet: #8900f2ff;
+  --purple-x-11: #a100f2ff;
+  --purple-x-11-2: #b100e8ff;
+  --electric-purple: #bc00ddff;
+  --steel-pink: #d100d1ff;
+  --steel-pink-2: #db00b6ff;
+  --fashion-fuchsia: #e500a4ff;
+  --magenta-process: #f20089ff;
+
+  /*=============================================
   =                    Brand                    =
   =============================================*/
 
-  --ds-color-primary: #2ea44f;
+  --ds-color-primary: var(--purple-x-11);
   --ds-color-primary-hover: #2c974b;
   --ds-color-primary-active: #288b44;
   --ds-color-primary-disabled: #94d3a2;
 
-  --ds-color-secondary: #fafbfc;
+  --ds-color-secondary: var(--flickr-pink);
   --ds-color-secondary-hover: #f3f4f6;
   --ds-color-secondary-active: #e7eaee;
   --ds-color-secondary-disabled: #fafbfc;
+
+  --ds-color-tertiary: var(--vivid-sky-blue);
+  --ds-color-tertiary-hover: #f3f4f6;
+  --ds-color-tertiary-active: #e7eaee;
+  --ds-color-tertiary-disabled: #fafbfc;
 
   --ds-font-family: 'Cabin', 'HelveticaNeue', 'Helvetica', 'Arial', sans-serif;
 

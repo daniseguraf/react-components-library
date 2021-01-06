@@ -6,7 +6,7 @@ export interface ButtonProps
   /**
    * Type of button
    */
-  kind?: 'primary' | 'secondary';
+  kind?: 'primary' | 'secondary' | 'tertiary';
   /**
    * Optional CSS classes
    */

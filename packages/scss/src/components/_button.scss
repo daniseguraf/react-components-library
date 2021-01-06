@@ -57,6 +57,23 @@
     }
   }
 
+  &-tertiary {
+    color: var(--ds-btn-text-secondary);
+    background: var(--ds-btn-bg-color-secondary);
+    border: var(--ds-btn-border-width) solid
+      var(--ds-btn-border-color-secondary);
+
+    &:hover {
+      background: var(--ds-btn-bg-color-hover-secondary);
+      border-color: var(--ds-btn-border-color-hover-secondary);
+    }
+
+    &:active {
+      background: var(--ds-btn-bg-color-active-secondary);
+      border-color: var(--ds-btn-border-color-active-secondary);
+    }
+  }
+
   // Block level button
   &-block {
     display: block;

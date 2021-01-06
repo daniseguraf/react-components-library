@@ -12,4 +12,4 @@ export const Standard: FC = () => (
   </div>
 );
 
-export const Label: FC = () => <Input />;
+export const NoLabel: FC = () => <Input />;

@@ -6,17 +6,21 @@ export default {
   title: 'Components / Button',
 };
 
-export const Primary: FC = () => {
-  return (
-    <div>
-      <Button kind="primary">Primary button</Button>
-    </div>
-  );
-};
+export const Primary: FC = () => <Button kind="primary">Primary button</Button>;
 
 export const Secondary: FC = () => (
   <Button kind="secondary">Secondary button</Button>
 );
+
+export const All: FC = () => {
+  return (
+    <div>
+      <Button kind="primary">Primary button</Button>
+      <Button kind="secondary">Secondary button</Button>
+      <Button kind="tertiary">Tertiary button</Button>
+    </div>
+  );
+};
 
 export const PrimaryDisabled: FC = () => (
   <Button kind="primary" disabled>
