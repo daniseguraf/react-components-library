@@ -1,0 +1,19 @@
+{
+  "name": "tokens",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "files": [
+    "build"
+  ],
+  "scripts": {
+    "start": "yarn run build && chokidar  \"tokens/**/*.json\" -c \"yarn run build\"",
+    "build": "style-dictionary build",
+    "clean": "rm -rf build",
+    "prepublish": "yarn run clean && yarn run build"
+  },
+  "devDependencies": {
+    "chokidar-cli": "^2.1.0",
+    "style-dictionary": "^2.10.2"
+  }
+}
