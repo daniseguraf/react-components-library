@@ -41,6 +41,7 @@
     "@storybook/addons": "^6.0.21",
     "@storybook/react": "^6.0.21",
     "@types/classnames": "^2.2.10",
+    "@types/feather-icons": "^4.7.0",
     "@types/jest": "^26.0.14",
     "@types/react": "^16.9.51",
     "@types/rollup-plugin-peer-deps-external": "^2.2.0",
@@ -57,6 +58,7 @@
     "eslint-plugin-prettier": "^3.1.4",
     "eslint-plugin-react": "^7.20.5",
     "eslint-plugin-react-hooks": "^4.1.2",
+    "feather-icons": "^4.28.0",
     "husky": "^4.3.0",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^26.5.2",
@@ -81,5 +83,8 @@
   },
   "publishConfig": {
     "access": "public"
+  },
+  "dependencies": {
+    "html-react-parser": "^1.2.1"
   }
 }

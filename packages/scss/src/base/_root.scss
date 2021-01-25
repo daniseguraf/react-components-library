@@ -31,14 +31,14 @@
   =                    Brand                    =
   =============================================*/
 
-  --ds-color-primary: var(--purple-x-11);
-  --ds-color-primary-hover: #2c974b;
-  --ds-color-primary-active: #288b44;
+  --ds-color-primary: #{$color-primary-00};
+  --ds-color-primary-hover: #{$color-primary-10};
+  --ds-color-primary-active: #{$color-primary-20};
   --ds-color-primary-disabled: #94d3a2;
 
-  --ds-color-secondary: var(--vivid-sky-blue);
-  --ds-color-secondary-hover: #f3f4f6;
-  --ds-color-secondary-active: #e7eaee;
+  --ds-color-secondary: #{$color-secondary-00};
+  --ds-color-secondary-hover: #{$color-secondary-10};
+  --ds-color-secondary-active: #{$color-secondary-20};
   --ds-color-secondary-disabled: #fafbfc;
 
   --ds-color-tertiary: var(--vivid-sky-blue);

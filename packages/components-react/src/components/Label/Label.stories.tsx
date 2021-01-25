@@ -3,7 +3,7 @@ import Label from './Label';
 
 export default {
   component: Label,
-  title: 'Componentes / Label',
+  title: 'Components / Label',
   parameters: {
     component: Label,
     componentSubtitle:
