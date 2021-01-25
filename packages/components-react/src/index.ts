@@ -15,3 +15,6 @@ export type { InputProps } from './components/Input/Input';
 
 export { default as Label } from './components/Label/Label';
 export type { LabelProps } from './components/Label/Label';
+
+export { default as Icon } from './components/Icon/Icon';
+export type { IconProps } from './components/Icon/Icon';
