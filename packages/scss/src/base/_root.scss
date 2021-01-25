@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap');
 
 :root {
   /*=============================================
@@ -46,11 +46,18 @@
   --ds-color-tertiary-active: #e7eaee;
   --ds-color-tertiary-disabled: #fafbfc;
 
-  --ds-font-family: 'Cabin', 'HelveticaNeue', 'Helvetica', 'Arial', sans-serif;
+  --ds-font-family: 'Inter', 'HelveticaNeue', 'Helvetica', 'Arial', sans-serif;
 
   /*=============================================
-  =                Font sizes                   =
+  =                   Fonts                     =
   =============================================*/
+
+  // xl
+  // --ds-heading-font-size-lg: calc(48 * 0.0625rem);
+  --ds-heading-font-size-lg: calc(#{$desktop-heading-1-font-size} * 0.0625rem);
+  --ds-heading-font-size-md: calc(#{$desktop-heading-2-font-size} * 0.0625rem);
+  --ds-heading-font-size-sm: calc(#{$desktop-heading-3-font-size} * 0.0625rem);
+  --ds-heading-font-size-xs: calc(#{$desktop-heading-4-font-size} * 0.0625rem);
 
   --ds-font-size-xl: 1.5rem; // 24px
   --ds-font-size-lg: 1.125rem; // 18px

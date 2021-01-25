@@ -1,0 +1,28 @@
+.heading {
+  color: #282828;
+  font-family: Inter;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+
+  &-lg {
+    font-size: var(--ds-heading-font-size-lg);
+    font-weight: 900;
+    line-height: 1;
+  }
+  &-md {
+    font-size: var(--ds-heading-font-size-md);
+    font-weight: 700;
+    line-height: 1;
+  }
+  &-sm {
+    font-size: var(--ds-heading-font-size-sm);
+    font-weight: 500;
+    line-height: 1;
+  }
+  &-xs {
+    font-size: var(--ds-heading-font-size-xs);
+    font-weight: 700;
+    line-height: 1;
+  }
+}

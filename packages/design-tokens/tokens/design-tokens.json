@@ -233,7 +233,7 @@
         "dark": {
           "category": "fill",
           "comment": null,
-          "value": "rgba(52, 35, 205, 1)",
+          "value": "rgba(40, 40, 40, 1)",
           "type": "color"
         }
       },
@@ -274,7 +274,7 @@
       "heading": {
         "category": "fill",
         "comment": null,
-        "value": "rgba(52, 35, 205, 1)",
+        "value": "rgba(31, 21, 123, 1)",
         "type": "color"
       },
       "link": {
