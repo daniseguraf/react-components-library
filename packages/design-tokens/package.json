@@ -2,11 +2,8 @@
   "name": "tokens",
   "version": "1.0.0",
   "main": "index.js",
-  "license": "MIT",
   "private": true,
-  "files": [
-    "build"
-  ],
+  "license": "MIT",
   "scripts": {
     "start": "yarn run build && chokidar  \"tokens/**/*.json\" -c \"yarn run build\"",
     "build": "style-dictionary build",
