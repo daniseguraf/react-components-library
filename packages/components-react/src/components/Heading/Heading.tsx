@@ -1,13 +1,42 @@
-import React, { Fragment } from 'react';
+import React, { FC } from 'react';
 import classNames from 'classnames';
 
-const Heading = ({ as, size, children }) => (
-  <Fragment>
-    <h1 className="heading heading-lg">{children}</h1>
-    <h1 className="heading heading-md">{children}</h1>
-    <h1 className="heading heading-sm">{children}</h1>
-    <h1 className="heading heading-xs">{children}</h1>
-  </Fragment>
-);
+export interface HeadingProps extends React.HTMLAttributes<HTMLElement> {
+  /**
+   * HTML tags options
+   */
+  as?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'p';
+  /**
+   * Size options
+   */
+  size?: 'lg' | 'md' | 'sm' | 'xs';
+  /**
+   * Optional CSS classes
+   */
+  className?: string;
+}
+
+const Heading: FC<HeadingProps> = ({
+  as,
+  size,
+  className,
+  children,
+  ...other
+}) => {
+  const classNameList = classNames(
+    'ds-heading',
+    {
+      [`ds-heading-${size}`]: size,
+    },
+    className
+  );
+
+  return React.createElement(as, { class: classNameList, ...other }, children);
+};
+
+Heading.defaultProps = {
+  as: 'h1',
+  size: 'md',
+};
 
 export default Heading;

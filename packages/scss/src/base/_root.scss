@@ -46,35 +46,90 @@
   --ds-color-tertiary-active: #e7eaee;
   --ds-color-tertiary-disabled: #fafbfc;
 
-  --ds-font-family: 'Inter', 'HelveticaNeue', 'Helvetica', 'Arial', sans-serif;
-
   /*=============================================
-  =                   Fonts                     =
+  =                  Typography                 =
   =============================================*/
 
-  // xl
-  // --ds-heading-font-size-lg: calc(48 * 0.0625rem);
-  --ds-heading-font-size-lg: calc(#{$desktop-heading-1-font-size} * 0.0625rem);
-  --ds-heading-font-size-md: calc(#{$desktop-heading-2-font-size} * 0.0625rem);
-  --ds-heading-font-size-sm: calc(#{$desktop-heading-3-font-size} * 0.0625rem);
-  --ds-heading-font-size-xs: calc(#{$desktop-heading-4-font-size} * 0.0625rem);
+  --toRem: 0.0625rem;
 
-  --ds-font-size-xl: 1.5rem; // 24px
-  --ds-font-size-lg: 1.125rem; // 18px
-  --ds-font-size-md: 1rem; // 16px
-  --ds-font-size-sm: 0.875rem; // 14px
-  --ds-font-size-xs: 0.75rem; // 12px
+  // font-family
+  --ds-font-family: #{$desktop-heading-1-font-family}, 'HelveticaNeue',
+    'Helvetica', 'Arial', sans-serif;
 
-  /*=============================================
-  =                Font weights                 =
-  =============================================*/
-  --ds-font-weight-light: 300;
-  --ds-font-weight-normal: 400;
-  --ds-font-weight-medium: 500;
-  --ds-font-weight-semibold: 600;
-  --ds-font-weight-bold: 700;
-  --ds-font-weight-extrabold: 800;
-  --ds-font-weight-black: 900;
+  /*----------  Headings  ----------*/
+
+  // color
+  --ds-heading-text-color: #{$color-text-dark};
+
+  // letter spacing
+  --ds-heading-letter-spacing: #{$desktop-heading-1-letter-spacing};
+
+  // sizes desktop
+  --ds-heading-font-size-lg: calc(
+    #{$desktop-heading-1-font-size} * var(--toRem)
+  );
+  --ds-heading-font-size-md: calc(
+    #{$desktop-heading-2-font-size} * var(--toRem)
+  );
+  --ds-heading-font-size-sm: calc(
+    #{$desktop-heading-3-font-size} * var(--toRem)
+  );
+  --ds-heading-font-size-xs: calc(
+    #{$desktop-heading-4-font-size} * var(--toRem)
+  );
+
+  // font-weight
+  --ds-heading-font-weight-lg: 900;
+  --ds-heading-font-weight-md: 700;
+  --ds-heading-font-weight-sm: 500;
+  --ds-heading-font-weight-xs: 700;
+
+  // headings sizes mobile
+  --ds-heading-font-size-lg-mobile: calc(
+    #{$mobile-heading-1-font-size} * var(--toRem)
+  );
+  --ds-heading-font-size-md-mobile: calc(
+    #{$mobile-heading-2-font-size} * var(--toRem)
+  );
+  --ds-heading-font-size-sm-mobile: calc(
+    #{$mobile-heading-3-font-size} * var(--toRem)
+  );
+  --ds-heading-font-size-xs-mobile: calc(
+    #{$mobile-heading-4-font-size} * var(--toRem)
+  );
+
+  /*----------  Subtitle  ----------*/
+  // color
+  --ds-subtitle-text-color: #{$color-text-dark};
+
+  // font-size
+  --ds-subtitle-font-size: calc(#{$common-subtitle-font-size} * var(--toRem));
+
+  // font-weight
+  --ds-subtitle-font-weight: 500;
+
+  // line-height
+  --ds-subtitle-line-height: 1.2;
+
+  /*----------  Paragraph  ----------*/
+  // color
+  --ds-paragraph-text-color: #{$color-text-dark};
+
+  // font-size
+  --ds-paragraph-font-size-lg: calc(
+    #{$common-body-1-default-font-size} * var(--toRem)
+  );
+
+  --ds-paragraph-font-size-md: calc(
+    #{$common-body-2-default-font-size} * var(--toRem)
+  );
+
+  // font-weight
+  --ds-paragraph-font-weight: 400;
+
+  // line-height
+  --ds-paragraph-line-height-lg: 1.5;
+  --ds-paragraph-line-height-md: 1.5;
 
   /*=============================================
   =                    Button                   =

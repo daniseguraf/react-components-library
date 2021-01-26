@@ -1,0 +1,17 @@
+.ds-text {
+  color: var(--ds-paragraph-text-color);
+  box-sizing: border-box;
+  font-family: var(--ds-font-family);
+  font-weight: var(--ds-paragraph-font-weight);
+  margin: 0;
+
+  &-lg {
+    font-size: var(--ds-paragraph-font-size-lg);
+    line-height: var(--ds-paragraph-line-height-lg);
+  }
+
+  &-md {
+    font-size: var(--ds-paragraph-font-size-md);
+    line-height: var(--ds-paragraph-line-height-md);
+  }
+}
