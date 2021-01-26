@@ -60,6 +60,7 @@
     "eslint-plugin-react": "^7.20.5",
     "eslint-plugin-react-hooks": "^4.1.2",
     "feather-icons": "^4.28.0",
+    "html-react-parser": "^1.2.1",
     "husky": "^4.3.0",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^26.5.2",
@@ -84,8 +85,5 @@
   },
   "publishConfig": {
     "access": "public"
-  },
-  "dependencies": {
-    "html-react-parser": "^1.2.1"
   }
 }
