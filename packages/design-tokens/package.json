@@ -15,5 +15,6 @@
   "devDependencies": {
     "chokidar-cli": "^2.1.0",
     "style-dictionary": "^2.10.2"
-  }
+  },
+  "private": "true"
 }
