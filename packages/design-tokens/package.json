@@ -9,12 +9,10 @@
   "scripts": {
     "start": "yarn run build && chokidar  \"tokens/**/*.json\" -c \"yarn run build\"",
     "build": "style-dictionary build",
-    "clean": "rm -rf build",
-    "prepublish": "yarn run clean && yarn run build"
+    "clean": "rm -rf build"
   },
   "devDependencies": {
     "chokidar-cli": "^2.1.0",
     "style-dictionary": "^2.10.2"
-  },
-  "private": "true"
+  }
 }
