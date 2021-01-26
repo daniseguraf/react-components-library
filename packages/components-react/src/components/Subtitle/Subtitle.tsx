@@ -15,7 +15,11 @@ export interface SubtitleProps extends React.HTMLAttributes<HTMLElement> {
 const Subtitle: FC<SubtitleProps> = ({ as, className, children, ...other }) => {
   const classNameList = classNames('ds-subtitle', className);
 
-  return React.createElement(as, { class: classNameList, ...other }, children);
+  return React.createElement(
+    as ?? 'h2',
+    { class: classNameList, ...other },
+    children
+  );
 };
 
 Subtitle.defaultProps = {
