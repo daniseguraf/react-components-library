@@ -1,3 +1,12 @@
+export { default as Heading } from './components/Heading/Heading';
+export type { HeadingProps } from './components/Heading/Heading';
+
+export { default as Subtitle } from './components/Subtitle/Subtitle';
+export type { SubtitleProps } from './components/Subtitle/Subtitle';
+
+export { default as Text } from './components/Text/Text';
+export type { TextProps } from './components/Text/Text';
+
 export { default as Button } from './components/Button/Button';
 export type { ButtonProps } from './components/Button/Button';
 
@@ -18,12 +27,3 @@ export type { LabelProps } from './components/Label/Label';
 
 export { default as Icon } from './components/Icon/Icon';
 export type { IconProps } from './components/Icon/Icon';
-
-export { default as Heading } from './components/Heading/Heading';
-export type { HeadingProps } from './components/Heading/Heading';
-
-export { default as Subtitle } from './components/Subtitle/Subtitle';
-export type { SubtitleProps } from './components/Subtitle/Subtitle';
-
-export { default as Text } from './components/Text/Text';
-export type { TextProps } from './components/Text/Text';

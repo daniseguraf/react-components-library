@@ -17,7 +17,7 @@ const Subtitle: FC<SubtitleProps> = ({ as, className, children, ...other }) => {
 
   return React.createElement(
     as ?? 'h2',
-    { class: classNameList, ...other },
+    { className: classNameList, ...other },
     children
   );
 };

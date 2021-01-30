@@ -6,4 +6,6 @@ export default {
   title: 'Components / Subtitle',
 };
 
-export const Default: FC = () => <Subtitle>Subtitle default</Subtitle>;
+export const Default: FC = () => (
+  <Subtitle>Lorem ipsum dolor sit amet</Subtitle>
+);

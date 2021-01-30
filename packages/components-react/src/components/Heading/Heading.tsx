@@ -33,7 +33,7 @@ const Heading: FC<HeadingProps> = ({
 
   return React.createElement(
     as ?? 'h1',
-    { class: classNameList, ...other },
+    { className: classNameList, ...other },
     children
   );
 };
