@@ -1,5 +1,7 @@
-import React, { Fragment, FC } from 'react';
+import React, { FC } from 'react';
 import Heading from './Heading';
+
+import { ElementsMarginBottom } from './../../docs/wrappers';
 
 export default {
   component: Heading,
@@ -9,7 +11,7 @@ export default {
 export const Default: FC = () => <Heading>Heading 1</Heading>;
 
 export const Sizes: FC = () => (
-  <Fragment>
+  <ElementsMarginBottom>
     <Heading as="h1" size="lg">
       Heading 1
     </Heading>
@@ -22,5 +24,5 @@ export const Sizes: FC = () => (
     <Heading as="h4" size="xs">
       Heading 4
     </Heading>
-  </Fragment>
+  </ElementsMarginBottom>
 );

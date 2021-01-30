@@ -21,7 +21,11 @@ const Text: FC<TextProps> = ({ size, className, children, ...other }) => {
     className
   );
 
-  return React.createElement('p', { class: classNameList, ...other }, children);
+  return React.createElement(
+    'p',
+    { className: classNameList, ...other },
+    children
+  );
 };
 
 Text.defaultProps = {

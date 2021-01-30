@@ -1,5 +1,7 @@
-import React, { Fragment, FC } from 'react';
+import React, { FC } from 'react';
 import Text from './Text';
+
+import { ElementsMarginBottom } from './../../docs/wrappers';
 
 export default {
   component: Text,
@@ -9,7 +11,7 @@ export default {
 export const Default: FC = () => <Text>Text 1</Text>;
 
 export const Sizes: FC = () => (
-  <Fragment>
+  <ElementsMarginBottom>
     <Text size="lg">
       Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia et
       asperiores vel numquam quos saepe odio accusamus quisquam magnam veniam?
@@ -20,5 +22,5 @@ export const Sizes: FC = () => (
       cupiditate odit laboriosam ad, nobis corporis! Modi aliquid suscipit omnis
       laudantium tempora, hic minima ex necessitatibus accusantium minus. Sequi?
     </Text>
-  </Fragment>
+  </ElementsMarginBottom>
 );
