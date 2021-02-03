@@ -1,5 +1,6 @@
 import React, { FC, useState, Fragment } from 'react';
 import Button from './Button';
+import { ElementsMarginBottom } from './../../docs/wrappers';
 
 export default {
   component: Button,
@@ -26,22 +27,22 @@ export const SecondaryDisabled: FC = () => (
 
 export const All: FC = () => {
   return (
-    <Fragment>
+    <ElementsMarginBottom>
       <Button kind="primary">Primary button</Button>
       <Button kind="secondary">Secondary button</Button>
-    </Fragment>
+    </ElementsMarginBottom>
   );
 };
 
 export const BlockButton: FC = () => (
-  <Fragment>
+  <ElementsMarginBottom>
     <Button kind="primary" isBlock>
       Block button
     </Button>
     <Button kind="secondary" isBlock>
       Block button
     </Button>
-  </Fragment>
+  </ElementsMarginBottom>
 );
 
 export const Callbacks: FC = () => {
@@ -59,7 +60,7 @@ export const Callbacks: FC = () => {
         onFocus={handleEvent}
         onBlur={handleEvent}
       >
-        Primary Button
+        Primary button
       </Button>
       <br />
       <br />
