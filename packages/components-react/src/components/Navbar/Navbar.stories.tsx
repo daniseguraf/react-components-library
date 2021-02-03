@@ -6,26 +6,22 @@ export default {
   title: 'Components / Navbar',
 };
 
-export const Default: FC = () => (
-  <div style={{ backgroundColor: '#949494', padding: '6px' }}>
-    <Navbar>
-      <div>Logo</div>
-      <ul className="docs-ul">
-        <li>Item 1</li>
-        <li>Item 2</li>
-        <li>Item 3</li>
-        <li>Item 4</li>
-      </ul>
-      <div>Login</div>
-    </Navbar>
-  </div>
+export const Dark: FC = () => (
+  <Navbar type="dark">
+    <ul className="docs-ul docs-ul-light">
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+      <li>Item 4</li>
+    </ul>
+  </Navbar>
 );
 
-export const BackgroundColor: FC = () => (
-  <div style={{ backgroundColor: '#949494', padding: '6px' }}>
-    <Navbar backgroundColor="#dedbde">
+export const Light: FC = () => (
+  <div style={{ backgroundColor: '#3423cd', padding: '5px' }}>
+    <Navbar type="light">
       <div>Logo</div>
-      <ul className="docs-ul">
+      <ul className="docs-ul docs-ul-dark">
         <li>Item 1</li>
         <li>Item 2</li>
         <li>Item 3</li>

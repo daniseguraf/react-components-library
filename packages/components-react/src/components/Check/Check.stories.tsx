@@ -65,7 +65,6 @@ export const Radio: FC = () => {
     setCurrent(e.target.value);
 
     const updatedFoods = Object.assign({}, state, { [key]: value });
-    console.log(updatedFoods);
 
     setState(() => updatedFoods);
   };

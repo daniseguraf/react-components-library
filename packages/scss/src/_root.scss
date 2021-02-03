@@ -174,4 +174,14 @@
   // border
   --ds-btn-border-color-primary-disabled: #{$color-opacities-dark-10};
   --ds-btn-border-color-secondary-disabled: #{$color-opacities-dark-10};
+
+  /*=============================================
+  =                    Navbar                   =
+  =============================================*/
+
+  --ds-navbar-height: 56px;
+  --ds-navbar-width: 100%;
+
+  --ds-navbar-background-color-dark: #{$color-secondary-00};
+  --ds-navbar-background-color-light: #{$color-neutral-00};
 }

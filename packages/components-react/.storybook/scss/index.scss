@@ -27,8 +27,21 @@ h2.sbdocs.sbdocs-h2.css-1lg570m {
 
 .docs-ul {
   padding: 0;
+
   li {
     display: inline;
     padding: 0 8px;
+  }
+
+  &-dark {
+    li {
+      color: #282828;
+    }
+  }
+
+  &-light {
+    li {
+      color: #fff;
+    }
   }
 }

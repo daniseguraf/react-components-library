@@ -1,13 +1,19 @@
 .ds-navbar {
-  width: 100%;
+  width: var(--ds-navbar-width);
+  height: var(--ds-navbar-height);
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 8px 16px;
-  background: #ffffff;
+  padding: 16px 24px;
   box-sizing: border-box;
-  height: 64px;
 
+  &-dark {
+    background: var(--ds-navbar-background-color-dark);
+  }
+
+  &-light {
+    background: var(--ds-navbar-background-color-light);
+  }
   &-fixed {
     position: fixed;
     top: 0;

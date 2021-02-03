@@ -146,6 +146,7 @@ const Input: FC<InputProps> = React.forwardRef<HTMLInputElement, InputProps>(
         onClick={onClick}
         onBlur={onBlur}
         ref={ref}
+        readOnly={readOnly}
         {...other}
       />
     );
