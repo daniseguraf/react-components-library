@@ -34,17 +34,17 @@
   --ds-color-primary: #{$color-primary-00};
   --ds-color-primary-hover: #{$color-primary-10};
   --ds-color-primary-active: #{$color-primary-20};
-  --ds-color-primary-disabled: #94d3a2;
+  --ds-color-primary-disabled: #{$color-neutral-05};
 
-  --ds-color-secondary: #{$color-secondary-00};
-  --ds-color-secondary-hover: #{$color-secondary-10};
-  --ds-color-secondary-active: #{$color-secondary-20};
-  --ds-color-secondary-disabled: #fafbfc;
+  --ds-color-secondary: #{$color-neutral-00};
+  --ds-color-secondary-hover: #{$color-neutral-05};
+  --ds-color-secondary-active: #{$color-neutral-20};
+  --ds-color-secondary-disabled: #{$color-neutral-05};
 
-  --ds-color-tertiary: var(--vivid-sky-blue);
-  --ds-color-tertiary-hover: #f3f4f6;
-  --ds-color-tertiary-active: #e7eaee;
-  --ds-color-tertiary-disabled: #fafbfc;
+  // --ds-color-tertiary: var(--vivid-sky-blue);
+  // --ds-color-tertiary-hover: #f3f4f6;
+  // --ds-color-tertiary-active: #e7eaee;
+  // --ds-color-tertiary-disabled: #fafbfc;
 
   /*=============================================
   =                  Typography                 =
@@ -148,17 +148,20 @@
   --ds-btn-border-radius: 4px;
 
   // font size
-  --ds-btn-font-size: var(--ds-font-size-md);
+  --ds-btn-font-size: calc(#{$common-label-font-size} * var(--toRem));
 
   // font weight
-  --ds-btn-font-weight: var(--ds-font-weight-normal);
+  --ds-btn-font-weight: 500;
 
   // padding
-  --ds-btn-padding: 11px 12px;
+  --ds-btn-padding: 13px 15px;
+
+  // border radius
+  --ds-btn-line-height: 1.25;
 
   // text color
-  --ds-btn-text-primary: #fff;
-  --ds-btn-text-secondary: #24292e;
+  --ds-btn-text-primary: #{$color-neutral-00};
+  --ds-btn-text-secondary: #{$color-text-dark};
 
   // background color
   --ds-btn-bg-color-primary: var(--ds-color-primary);
@@ -174,13 +177,27 @@
 
   // border color
   --ds-btn-border-color-primary: var(--ds-color-primary);
-  --ds-btn-border-color-secondary: #c7c7ca;
+  --ds-btn-border-color-secondary: #{$color-opacities-dark-20};
 
   // border color hover
   --ds-btn-border-color-hover-primary: var(--ds-color-primary-hover);
-  --ds-btn-border-color-hover-secondary: #c7c7ca;
+  --ds-btn-border-color-hover-secondary: #{$color-opacities-dark-20};
 
   // border color active
   --ds-btn-border-color-active-primary: var(--ds-color-primary-active);
-  --ds-btn-border-color-active-secondary: #c7c7ca;
+  --ds-btn-border-color-active-secondary: #{$color-opacities-dark-20};
+
+  /*----------  disabled state  ----------*/
+
+  // text
+  --ds-btn-text-primary-disabled: #{$color-text-medium};
+  --ds-btn-text-secondary-disabled: #{$color-text-medium};
+
+  // background
+  --ds-btn-bg-primary-disabled: #{$color-neutral-05};
+  --ds-btn-bg-secondary-disabled: #{$color-neutral-05};
+
+  // border
+  --ds-btn-border-color-primary-disabled: #{$color-opacities-dark-10};
+  --ds-btn-border-color-secondary-disabled: #{$color-opacities-dark-10};
 }

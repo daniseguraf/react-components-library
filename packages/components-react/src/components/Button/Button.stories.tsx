@@ -12,16 +12,6 @@ export const Secondary: FC = () => (
   <Button kind="secondary">Secondary button</Button>
 );
 
-export const All: FC = () => {
-  return (
-    <div>
-      <Button kind="primary">Primary button</Button>
-      <Button kind="secondary">Secondary button</Button>
-      <Button kind="tertiary">Tertiary button</Button>
-    </div>
-  );
-};
-
 export const PrimaryDisabled: FC = () => (
   <Button kind="primary" disabled>
     Primary disabled
@@ -34,18 +24,27 @@ export const SecondaryDisabled: FC = () => (
   </Button>
 );
 
+export const All: FC = () => {
+  return (
+    <Fragment>
+      <Button kind="primary">Primary button</Button>
+      <Button kind="secondary">Secondary button</Button>
+    </Fragment>
+  );
+};
+
 export const BlockButton: FC = () => (
-  <div>
+  <Fragment>
     <Button kind="primary" isBlock>
       Block button
     </Button>
     <Button kind="secondary" isBlock>
       Block button
     </Button>
-  </div>
+  </Fragment>
 );
 
-export const Events: FC = () => {
+export const Callbacks: FC = () => {
   const [event, setEvent] = useState(null);
 
   const handleEvent = (e: React.SyntheticEvent<HTMLButtonElement>) => {
@@ -54,16 +53,20 @@ export const Events: FC = () => {
 
   return (
     <Fragment>
-      <Button onClick={handleEvent} onFocus={handleEvent} onBlur={handleEvent}>
+      <Button
+        kind="primary"
+        onClick={handleEvent}
+        onFocus={handleEvent}
+        onBlur={handleEvent}
+      >
         Primary Button
       </Button>
       <br />
       <br />
-      <pre>Event: {event ? event : '--'}</pre>
+      <pre>Evento: {event ? event : '--'}</pre>
     </Fragment>
   );
 };
-
 export const MoreProps: FC = () => {
   return (
     <Button className="some-class" id="some-id">

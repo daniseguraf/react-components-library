@@ -2,10 +2,11 @@
   font-family: var(--ds-btn-font-family);
   font-size: var(--ds-btn-font-size);
   font-weight: var(--ds-btn-font-weight);
-  border: var(--dl-btn-border-width) solid transparent;
+  border: var(--ds-btn-border-width) solid transparent;
   border-radius: var(--ds-btn-border-radius);
-  line-height: 1;
+  line-height: var(--ds-btn-line-height);
   padding: var(--ds-btn-padding);
+  box-sizing: border-box;
 
   &:active,
   &:focus {
@@ -18,9 +19,10 @@
 
   &:disabled,
   &:disabled:hover {
-    color: #737581;
-    background: #e1e1e1;
-    border: 1px solid #e1e1e1;
+    color: var(--ds-btn-text-primary-disabled);
+    background: var(--ds-btn-bg-primary-disabled);
+    border: var(--ds-btn-border-width) solid
+      var(--ds-btn-border-color-primary-disabled);
     cursor: not-allowed;
   }
 
@@ -57,22 +59,22 @@
     }
   }
 
-  &-tertiary {
-    color: var(--ds-btn-text-secondary);
-    background: var(--ds-btn-bg-color-secondary);
-    border: var(--ds-btn-border-width) solid
-      var(--ds-btn-border-color-secondary);
+  // &-tertiary {
+  //   color: var(--ds-btn-text-secondary);
+  //   background: var(--ds-btn-bg-color-secondary);
+  //   border: var(--ds-btn-border-width) solid
+  //     var(--ds-btn-border-color-secondary);
 
-    &:hover {
-      background: var(--ds-btn-bg-color-hover-secondary);
-      border-color: var(--ds-btn-border-color-hover-secondary);
-    }
+  //   &:hover {
+  //     background: var(--ds-btn-bg-color-hover-secondary);
+  //     border-color: var(--ds-btn-border-color-hover-secondary);
+  //   }
 
-    &:active {
-      background: var(--ds-btn-bg-color-active-secondary);
-      border-color: var(--ds-btn-border-color-active-secondary);
-    }
-  }
+  //   &:active {
+  //     background: var(--ds-btn-bg-color-active-secondary);
+  //     border-color: var(--ds-btn-border-color-active-secondary);
+  //   }
+  // }
 
   // Block level button
   &-block {
