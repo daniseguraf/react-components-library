@@ -3,6 +3,26 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.2.0](https://github.com/daniseguraf/react-components-library/compare/v1.1.0...v1.2.0) (2021-02-03)
+
+
+### Bug Fixes
+
+* **typography:** bug in createlement arg ([1afdbd9](https://github.com/daniseguraf/react-components-library/commit/1afdbd9bf8251a7b4197ad29c631b7543dc781ca))
+
+
+### Features
+
+* **button:** update css colors ([faa73e2](https://github.com/daniseguraf/react-components-library/commit/faa73e2ad999e3bdb44075db1310a51d720cc09c))
+* **check:** get state checkbox list ([d800945](https://github.com/daniseguraf/react-components-library/commit/d800945d6fbcfcc804cedf500f2219f9b17d8f69))
+* **checkbox:** component checkbox created ([edc8d37](https://github.com/daniseguraf/react-components-library/commit/edc8d37b479eed069a2fb98d03c9c3501fdc978b))
+* **checkbox:** expose checkbox value ([c36cb9d](https://github.com/daniseguraf/react-components-library/commit/c36cb9dc7add03dbcac13d6d5143df2791278825))
+* **navbar:** added use cases ([7429e08](https://github.com/daniseguraf/react-components-library/commit/7429e082ccb9192c9593c6d88cfdae3625a46ef4))
+
+
+
+
+
 # [1.1.0](https://github.com/daniseguraf/react-components-library/compare/v0.1.5...v1.1.0) (2021-01-26)
 
 

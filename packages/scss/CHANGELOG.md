@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.2.0](https://github.com/daniseguraf/react-components-library/compare/v1.1.0...v1.2.0) (2021-02-03)
+
+
+### Features
+
+* **button:** update css colors ([faa73e2](https://github.com/daniseguraf/react-components-library/commit/faa73e2ad999e3bdb44075db1310a51d720cc09c))
+* **navbar:** added use cases ([7429e08](https://github.com/daniseguraf/react-components-library/commit/7429e082ccb9192c9593c6d88cfdae3625a46ef4))
+
+
+
+
+
 # [1.1.0](https://github.com/daniseguraf/react-components-library/compare/v0.1.5...v1.1.0) (2021-01-26)
 
 
