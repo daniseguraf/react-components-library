@@ -21,10 +21,24 @@
   // --ds-color-tertiary-disabled: #fafbfc;
 
   /*=============================================
+  =                Cross variables              =
+  =============================================*/
+  --toRem: 0.0625rem;
+
+  --ds-spacing-90: 40px;
+  --ds-spacing-80: 32px;
+  --ds-spacing-70: 24px;
+  --ds-spacing-60: 20px;
+  --ds-spacing-50: 16px;
+  --ds-spacing-40: 12px;
+  --ds-spacing-30: 8px;
+  --ds-spacing-20: 4px;
+  --ds-spacing-10: 2px;
+  --ds-spacing-00: 1px;
+
+  /*=============================================
   =                  Typography                 =
   =============================================*/
-
-  --toRem: 0.0625rem;
 
   // font-family
   --ds-font-family: #{$desktop-heading-1-font-family}, 'HelveticaNeue',
@@ -113,7 +127,7 @@
   --ds-btn-font-family: var(--ds-font-family);
 
   // border width
-  --ds-btn-border-width: 1px;
+  --ds-btn-border-width: var(--ds-spacing-00);
 
   // letter spacing
   --ds-btn-letter-spacing: 0;
@@ -184,4 +198,20 @@
 
   --ds-navbar-background-color-dark: #{$color-secondary-00};
   --ds-navbar-background-color-light: #{$color-neutral-00};
+
+  /*=============================================
+  =                    Input                    =
+  =============================================*/
+  --ds-input-background-color: #{$color-neutral-00};
+  --ds-input-border-color: #{$color-neutral-20};
+  --ds-input-border-width: var(--ds-spacing-00);
+  --ds-input-border-radius: var(--ds-spacing-20);
+  --ds-input-text-color: #{$color-text-light};
+  --ds-input-height: var(--ds-spacing-90);
+  --ds-input-padding: 8px 12px;
+  --ds-input-box-shadow: inset 0px 2px 0px rgba(225, 228, 232, 0.2);
+  --ds-input-font-size: 1rem;
+  --ds-input-line-height: 1.5;
+  --ds-input-width: 100%;
+  --ds-input-outline: none;
 }
