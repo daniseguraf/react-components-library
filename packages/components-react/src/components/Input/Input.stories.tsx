@@ -1,15 +1,14 @@
 import React, { FC } from 'react';
-import Input from './Input';
+import Form from './../Form';
 
 export default {
-  component: Input,
+  component: Form.Input,
   title: 'Components / Input',
 };
 
-export const Standard: FC = () => (
-  <div className="ds-form-group">
-    <Input label="Full name" placeholder="e.g. James Bod" />
-  </div>
+export const Default: FC = () => (
+  <Form.Group controlId="inputDefault">
+    <Form.Label>Full name</Form.Label>
+    <Form.Input type="text" placeholder="e.g. James Bod" />
+  </Form.Group>
 );
-
-export const NoLabel: FC = () => <Input />;

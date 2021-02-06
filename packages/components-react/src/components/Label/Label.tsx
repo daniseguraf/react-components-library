@@ -1,22 +1,22 @@
-import React, { FC } from 'react';
+import React, { FC, useContext } from 'react';
 import classNames from 'classnames';
 
+import FormGroupContext from './../FormGroup/FormGroupContext';
+
 export interface LabelProps extends React.HTMLAttributes<HTMLLabelElement> {
-  /**
-   * Asocia el label con otro elemento, usualmente inputs y textareas.
-   */
-  htmlFor?: string;
   /**
    * Clases CSS opcionales
    */
   className?: string;
 }
 
-const Label: FC<LabelProps> = ({ htmlFor, className, children, ...other }) => {
+const Label: FC<LabelProps> = ({ className, children, ...other }) => {
+  const { controlId } = useContext(FormGroupContext);
+
   const labelClasses = classNames('ds-form-label', className);
 
   return (
-    <label htmlFor={htmlFor} className={labelClasses} {...other}>
+    <label htmlFor={controlId} className={labelClasses} {...other}>
       {children}
     </label>
   );

@@ -1,16 +1,16 @@
-import React, { FC, Fragment, useEffect, useRef, useState } from 'react';
+import React, {
+  FC,
+  Fragment,
+  useEffect,
+  useRef,
+  useState,
+  useContext,
+} from 'react';
 import classNames from 'classnames';
-import Label from '../Label';
+
+import FormGroupContext from './../FormGroup/FormGroupContext';
 
 export interface InputProps extends React.HTMLAttributes<HTMLInputElement> {
-  /**
-   * Label del input
-   */
-  label?: string;
-  /**
-   * Nombre del input (el `id` toma el mismo valor del name)
-   */
-  name?: string;
   /**
    * Opciones de input
    */
@@ -73,9 +73,6 @@ export interface InputProps extends React.HTMLAttributes<HTMLInputElement> {
 const Input: FC<InputProps> = React.forwardRef<HTMLInputElement, InputProps>(
   (
     {
-      id,
-      label,
-      name,
       type,
       value,
       className,
@@ -93,15 +90,10 @@ const Input: FC<InputProps> = React.forwardRef<HTMLInputElement, InputProps>(
     },
     ref
   ) => {
-    const collection = {
-      id,
-      ariaLabel,
-      name,
-    };
-
     const INITIAL_VALUE = !!value?.trim() ? value : '';
-
     const [inputValue, setInputValue] = useState(INITIAL_VALUE);
+
+    const { controlId } = useContext(FormGroupContext);
 
     const inputClasses = classNames(
       'ds-input',
@@ -139,8 +131,8 @@ const Input: FC<InputProps> = React.forwardRef<HTMLInputElement, InputProps>(
 
     const inputElement = (
       <input
-        id={name}
-        name={name}
+        id={controlId}
+        name={controlId}
         type={type}
         value={inputValue}
         className={inputClasses}
@@ -168,18 +160,14 @@ const Input: FC<InputProps> = React.forwardRef<HTMLInputElement, InputProps>(
 
     return (
       <Fragment>
-        {label && <Label htmlFor={name}>{label}</Label>}
+        {inputElement}
 
-        <div>
-          {inputElement}
-
-          <div className="ds-feedback-wrapper">
-            {helperText && (
-              <div className={feedbackClasses || 'ds-form-text'} id={helperId}>
-                {helperText}
-              </div>
-            )}
-          </div>
+        <div className="ds-feedback-wrapper">
+          {helperText && (
+            <div className={feedbackClasses || 'ds-form-text'} id={helperId}>
+              {helperText}
+            </div>
+          )}
         </div>
       </Fragment>
     );
