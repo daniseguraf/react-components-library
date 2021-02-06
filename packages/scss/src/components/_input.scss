@@ -18,10 +18,21 @@
     opacity: 1;
   }
 
+  &:hover {
+    border: 1px solid #9a9a9a;
+    -webkit-box-shadow: 1px 0px 1px 4px rgba(0, 0, 0, 0.05);
+    box-shadow: 1px 0px 1px 4px rgba(0, 0, 0, 0.05);
+  }
+
   &:focus {
-    border: 1px solid #3423cd;
-    box-shadow: 3px -3px 0px #bad1f4, -3px 3px 0px #bad1f4, 3px 3px 0px #bad1f4,
-      -3px -3px 0px #bad1f4;
+    box-sizing: border-box;
+    border: 2px solid #3423cd;
+    border-radius: 4px;
+    margin-left: -1px;
+    margin-right: -1px;
+
+    -webkit-box-shadow: 1px 0px 1px 4px rgba(49, 64, 93, 0.15);
+    box-shadow: 1px 0px 1px 4px rgba(49, 64, 93, 0.15);
   }
 
   &:disabled {
