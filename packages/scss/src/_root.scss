@@ -200,6 +200,11 @@
   --ds-navbar-background-color-light: #{$color-neutral-00};
 
   /*=============================================
+  =                    Form                    =
+  =============================================*/
+  --ds-form-margin-bottom: var(--ds-spacing-50);
+
+  /*=============================================
   =                    Input                    =
   =============================================*/
   --ds-input-background-color: #{$color-neutral-00};
