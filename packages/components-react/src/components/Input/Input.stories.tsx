@@ -8,7 +8,7 @@ export default {
 
 export const Standard: FC = () => (
   <div className="ds-form-group">
-    <Input label="First Name" />
+    <Input label="Full name" placeholder="e.g. James Bod" />
   </div>
 );
 

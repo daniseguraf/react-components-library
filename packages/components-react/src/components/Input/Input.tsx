@@ -73,6 +73,7 @@ export interface InputProps extends React.HTMLAttributes<HTMLInputElement> {
 const Input: FC<InputProps> = React.forwardRef<HTMLInputElement, InputProps>(
   (
     {
+      id,
       label,
       name,
       type,
@@ -92,6 +93,12 @@ const Input: FC<InputProps> = React.forwardRef<HTMLInputElement, InputProps>(
     },
     ref
   ) => {
+    const collection = {
+      id,
+      ariaLabel,
+      name,
+    };
+
     const INITIAL_VALUE = !!value?.trim() ? value : '';
 
     const [inputValue, setInputValue] = useState(INITIAL_VALUE);

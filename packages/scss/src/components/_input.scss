@@ -13,6 +13,11 @@
   width: var(--ds-input-width);
   outline: var(--ds-input-outline);
 
+  &::placeholder {
+    color: var(--ds-input-placeholder-color);
+    opacity: 1;
+  }
+
   &:focus {
     border: 1px solid #3423cd;
     box-shadow: 3px -3px 0px #bad1f4, -3px 3px 0px #bad1f4, 3px 3px 0px #bad1f4,
@@ -34,11 +39,10 @@
 }
 
 .ds-form-group {
-  margin-bottom: 1rem;
+  // margin-bottom: 1rem;
 
   label {
     display: block;
-    font-size: 0.875rem;
-    margin-bottom: 4px;
+    // margin-bottom: 4px;
   }
 }

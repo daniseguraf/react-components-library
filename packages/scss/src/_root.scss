@@ -206,7 +206,8 @@
   --ds-input-border-color: #{$color-neutral-20};
   --ds-input-border-width: var(--ds-spacing-00);
   --ds-input-border-radius: var(--ds-spacing-20);
-  --ds-input-text-color: #{$color-text-light};
+  --ds-input-placeholder-color: #{$color-text-light};
+  --ds-input-text-color: #{$color-text-dark};
   --ds-input-height: var(--ds-spacing-90);
   --ds-input-padding: 8px 12px;
   --ds-input-box-shadow: inset 0px 2px 0px rgba(225, 228, 232, 0.2);
@@ -214,4 +215,6 @@
   --ds-input-line-height: 1.5;
   --ds-input-width: 100%;
   --ds-input-outline: none;
+
+  // label
 }
