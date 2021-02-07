@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.3.0](https://github.com/daniseguraf/react-components-library/compare/v1.2.0...v1.3.0) (2021-02-07)
+
+
+### Features
+
+* **form:** form component created ([ad5477a](https://github.com/daniseguraf/react-components-library/commit/ad5477a5291036e728a2868ba911c4908960c481))
+* **form:** update css styles form, input, label and form text ([2451f19](https://github.com/daniseguraf/react-components-library/commit/2451f19e0d43db53ab089d8aa032f8e815fdf5db))
+* **formgroup:** create context ([f2b49f3](https://github.com/daniseguraf/react-components-library/commit/f2b49f37635cb56da1c86ae8bd64234328b8dcd1))
+* **formgroup:** formgroup component created ([c21f7b0](https://github.com/daniseguraf/react-components-library/commit/c21f7b047555393feda56d056f727d12c4938ecd))
+
+
+
+
+
 # [1.2.0](https://github.com/daniseguraf/react-components-library/compare/v1.1.0...v1.2.0) (2021-02-03)
 
 
