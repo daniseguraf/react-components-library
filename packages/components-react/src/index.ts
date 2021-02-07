@@ -27,3 +27,12 @@ export type { LabelProps } from './components/Label/Label';
 
 export { default as Icon } from './components/Icon/Icon';
 export type { IconProps } from './components/Icon/Icon';
+
+export { default as Form } from './components/Form/Form';
+export type { FormProps } from './components/Form/Form';
+
+export { default as FormGroup } from './components/FormGroup/FormGroup';
+export type { FormGroupProps } from './components/FormGroup/FormGroup';
+
+export { default as FormHelperText } from './components/FormHelperText/FormHelperText';
+export type { FormHelperTextProps } from './components/FormHelperText/FormHelperText';

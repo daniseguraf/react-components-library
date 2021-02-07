@@ -1,11 +1,4 @@
-import React, {
-  FC,
-  Fragment,
-  useEffect,
-  useRef,
-  useState,
-  useContext,
-} from 'react';
+import React, { FC, useEffect, useRef, useState, useContext } from 'react';
 import classNames from 'classnames';
 
 import FormGroupContext from './../FormGroup/FormGroupContext';
@@ -119,7 +112,7 @@ const Input: FC<InputProps> = React.forwardRef<HTMLInputElement, InputProps>(
       }
     }, []);
 
-    const inputElement = (
+    return (
       <input
         id={controlId}
         name={controlId}
@@ -139,16 +132,6 @@ const Input: FC<InputProps> = React.forwardRef<HTMLInputElement, InputProps>(
         {...other}
       />
     );
-
-    let helperId;
-
-    if (isInvalid) {
-      helperId = `${name}-invalid-feedback`;
-    } else if (isValid) {
-      helperId = `${name}-valid-feedback`;
-    }
-
-    return <Fragment>{inputElement}</Fragment>;
   }
 );
 
