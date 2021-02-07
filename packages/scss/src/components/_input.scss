@@ -34,7 +34,7 @@
 
   // disabled
   &:disabled {
-    background: var(--ds-input-background-color);
+    background: var(--ds-input-background-color-disabled);
     border: var(--ds-input-border);
     color: var(--ds-input-text-color);
   }
