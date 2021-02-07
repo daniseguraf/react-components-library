@@ -1,0 +1,15 @@
+.ds-form-text {
+  color: var(--ds-form-text-text-color);
+  display: block;
+  font-size: var(--ds-form-text-font-size);
+  line-height: var(--ds-form-text-line-heigh);
+  margin-top: var(--ds-form-text-margin-top);
+
+  &-invalid-feedback {
+    color: var(--ds-input-background-color-error);
+  }
+
+  &-valid-feedback {
+    color: var(--ds-input-background-color-successs);
+  }
+}

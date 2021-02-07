@@ -1,7 +1,7 @@
 .ds-form-label {
-  font-size: 16px;
-  line-height: 1.5;
-  color: #282828;
-  margin-bottom: 8px;
-  // background: pink;
+  color: var(--ds-form-label-text-color);
+  display: block;
+  font-size: var(--ds-form-label-font-size);
+  line-height: var(--ds-form-label-line-height);
+  margin-bottom: var(--ds-form-label-margin-bottom);
 }

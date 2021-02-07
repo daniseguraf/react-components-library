@@ -112,6 +112,10 @@
     #{$common-body-2-default-font-size} * var(--toRem)
   );
 
+  --ds-paragraph-font-size-sm: calc(
+    #{$common-caption-default-font-size} * var(--toRem)
+  );
+
   // font-weight
   --ds-paragraph-font-weight: 400;
 
@@ -200,26 +204,58 @@
   --ds-navbar-background-color-light: #{$color-neutral-00};
 
   /*=============================================
-  =                    Form                    =
+  =                 Form Group                  =
   =============================================*/
   --ds-form-margin-bottom: var(--ds-spacing-50);
 
   /*=============================================
-  =                    Input                    =
+  =                 Form Label                  =
+  =============================================*/
+  --ds-form-label-text-color: #{$color-text-dark};
+  --ds-form-label-font-size: var(--ds-paragraph-font-size-md);
+  --ds-form-label-line-height: 1.5;
+  --ds-form-label-margin-bottom: var(--ds-spacing-30);
+
+  /*=============================================
+  =                 Form Input                  =
   =============================================*/
   --ds-input-background-color: #{$color-neutral-00};
-  --ds-input-border-color: #{$color-neutral-20};
-  --ds-input-border-width: var(--ds-spacing-00);
+  --ds-input-border: var(--ds-spacing-00) solid #{$color-neutral-20};
   --ds-input-border-radius: var(--ds-spacing-20);
   --ds-input-placeholder-color: #{$color-text-light};
   --ds-input-text-color: #{$color-text-dark};
   --ds-input-height: var(--ds-spacing-90);
   --ds-input-padding: 8px 12px;
-  --ds-input-box-shadow: inset 0px 2px 0px rgba(225, 228, 232, 0.2);
   --ds-input-font-size: 1rem;
   --ds-input-line-height: 1.5;
   --ds-input-width: 100%;
   --ds-input-outline: none;
 
-  // label
+  // hover
+  --ds-input-border-hover: var(--ds-spacing-00) solid #{$color-neutral-40};
+  --ds-input-box-shadow: 1px 0px 1px 4px #{$color-opacities-dark-05};
+
+  // focus
+  --ds-input-border-color-focus: var(--ds-spacing-10) solid #{$color-secondary-00};
+  --ds-input-box-shadow-focus: 1px 0px 1px 4px rgba(49, 64, 93, 0.15);
+  --ds-input-margin-left-focus: -1px;
+  --ds-input-margin-right-focus: -1px;
+
+  // disabled
+  --ds-input-background-color: #{$color-neutral-05};
+  --ds-input-border: var(--ds-spacing-00) solid #{$color-neutral-20};
+  --ds-input-text-color: #{$color-text-medium};
+
+  // validation
+  --ds-input-background-color-error: #{$color-feedback-error-dark};
+  --ds-input-background-color-successs: #{$color-feedback-success-dark};
+  --ds-input-border-with-validation: var(--ds-spacing-10);
+
+  /*=============================================
+  =                 Form Text                  =
+  =============================================*/
+  --ds-form-text-text-color: #{$color-text-light};
+  --ds-form-text-font-size: var(--ds-paragraph-font-size-sm);
+  --ds-form-text-line-height: 1.5;
+  --ds-form-text-margin-top: var(--ds-spacing-30);
 }

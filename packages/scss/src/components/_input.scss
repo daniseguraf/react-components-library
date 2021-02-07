@@ -1,13 +1,12 @@
 .ds-input {
   background: var(--ds-input-background-color);
-  border: var(--ds-input-border-width) solid var(--ds-input-border-color);
+  border: var(--ds-input-border);
   border-radius: var(--ds-input-border-radius);
   box-sizing: border-box;
   color: var(--ds-input-text-color);
   display: block;
   height: var(--ds-input-height);
   padding: var(--ds-input-padding);
-  box-shadow: inset 0px 2px 0px rgba(225, 228, 232, 0.2);
   font-size: var(--ds-input-font-size);
   line-height: var(--ds-input-line-height);
   width: var(--ds-input-width);
@@ -19,41 +18,40 @@
   }
 
   &:hover {
-    border: 1px solid #9a9a9a;
-    -webkit-box-shadow: 1px 0px 1px 4px rgba(0, 0, 0, 0.05);
-    box-shadow: 1px 0px 1px 4px rgba(0, 0, 0, 0.05);
+    border: var(--ds-input-border-hover);
+    -webkit-box-shadow: var(--ds-input-box-shadow);
+    box-shadow: var(--ds-input-box-shadow);
   }
 
   &:focus {
+    border: var(--ds-input-border-color-focus);
+    -webkit-box-shadow: var(--ds-input-box-shadow-focus);
+    box-shadow: var(--ds-input-box-shadow-focus);
     box-sizing: border-box;
-    border: 2px solid #3423cd;
-    border-radius: 4px;
-    margin-left: -1px;
-    margin-right: -1px;
-
-    -webkit-box-shadow: 1px 0px 1px 4px rgba(49, 64, 93, 0.15);
-    box-shadow: 1px 0px 1px 4px rgba(49, 64, 93, 0.15);
+    margin-left: var(--ds-input-margin-left-focus);
+    margin-right: var(--ds-input-margin-right-focus);
   }
 
+  // disabled
   &:disabled {
-    background: #f6f8fa;
-    border-color: #e1e4e8;
-    box-shadow: inset 0px 2px 0px rgba(225, 228, 232, 0.2);
-    color: #6a737d;
+    background: var(--ds-input-background-color);
+    border: var(--ds-input-border);
+    color: var(--ds-input-text-color);
   }
-  &.ds-is-valid {
-    border-color: #3aa71f;
-  }
+
+  &.ds-is-valid,
   &.ds-is-invalid {
-    border-color: #d73a49;
+    border-width: var(--ds-input-border-with-validation);
+    margin-left: var(--ds-input-margin-left-focus);
+    margin-right: var(--ds-input-margin-right-focus);
   }
-}
 
-.ds-form-group {
-  // margin-bottom: 1rem;
+  // validation
+  &.ds-is-valid {
+    border-color: var(--ds-input-background-color-successs);
+  }
 
-  label {
-    display: block;
-    // margin-bottom: 4px;
+  &.ds-is-invalid {
+    border-color: var(--ds-input-background-color-error);
   }
 }

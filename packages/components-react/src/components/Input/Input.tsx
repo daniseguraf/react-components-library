@@ -32,10 +32,6 @@ export interface InputProps extends React.HTMLAttributes<HTMLInputElement> {
    */
   ariaLabel?: string;
   /**
-   * Mensaje de ayuda, error o éxito
-   */
-  helperText?: string;
-  /**
    * `true` si el estado es de éxito
    */
   isValid?: boolean;
@@ -78,7 +74,6 @@ const Input: FC<InputProps> = React.forwardRef<HTMLInputElement, InputProps>(
       className,
       placeholder,
       ariaLabel,
-      helperText,
       isValid,
       isInvalid,
       readOnly,
@@ -103,11 +98,6 @@ const Input: FC<InputProps> = React.forwardRef<HTMLInputElement, InputProps>(
       },
       className
     );
-
-    const feedbackClasses = classNames({
-      'ds-valid-feedback': isValid,
-      'ds-invalid-feedback': isInvalid,
-    });
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
       const val = e.target.value;
@@ -158,19 +148,7 @@ const Input: FC<InputProps> = React.forwardRef<HTMLInputElement, InputProps>(
       helperId = `${name}-valid-feedback`;
     }
 
-    return (
-      <Fragment>
-        {inputElement}
-
-        <div className="ds-feedback-wrapper">
-          {helperText && (
-            <div className={feedbackClasses || 'ds-form-text'} id={helperId}>
-              {helperText}
-            </div>
-          )}
-        </div>
-      </Fragment>
-    );
+    return <Fragment>{inputElement}</Fragment>;
   }
 );
 
