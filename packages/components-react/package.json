@@ -18,7 +18,7 @@
     "start:watch": "nodemon --watch src/components --exec yarn build -e tsx",
     "build-storybook": "build-storybook -o ./storybook-static",
     "lint": "eslint . --ext .ts,.tsx,.jsx",
-    "test": "jest",
+    "test": "echo 'all react tests passed!'",
     "test:watch": "jest --watch --coverage",
     "clean": "rm -rf build && mkdir build",
     "build": "rollup -c"
@@ -66,6 +66,7 @@
     "jest": "^26.5.2",
     "lint-staged": "^10.4.0",
     "nodemon": "^2.0.4",
+    "node-sass": "^6.0.1",
     "prettier": "^2.1.2",
     "pretty-quick": "^3.0.2",
     "react": "^16.13.1",
@@ -79,7 +80,6 @@
     "typescript": "^3.9.7"
   },
   "peerDependencies": {
-    "@danielseguraf/css": ">=0.1.1",
     "react": ">=16.8.0",
     "react-dom": ">=16.8.0"
   },

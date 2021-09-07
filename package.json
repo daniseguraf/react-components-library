@@ -3,15 +3,13 @@
   "version": "1.0.0",
   "license": "MIT",
   "private": true,
-  "workspaces": {
-    "packages": [
-      "packages/*",
-      "playground/*"
-    ]
-  },
+  "workspaces": [
+    "./packages/*"
+  ],
   "scripts": {
-    "start": "yarn lerna run start",
-    "build": "yarn lerna run build",
+    "start": "npx lerna run start",
+    "build": "npx lerna run build",
+    "test": "npx lerna run test",
     "publish": "yarn build && yarn lerna publish",
     "commit": "yarn git-cz",
     "build:storybook": "yarn build && yarn lerna run build-storybook"
