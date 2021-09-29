@@ -8,7 +8,7 @@
     "start": "yarn run build && chokidar  \"tokens/**/*.json\" -c \"yarn run build\"",
     "build": "style-dictionary build",
     "clean": "rm -rf build",
-    "test": "echo 'all deisgn-tokens tests passed!'"
+    "test": "echo 'all design-tokens tests passed!'"
   },
   "devDependencies": {
     "chokidar-cli": "^2.1.0",

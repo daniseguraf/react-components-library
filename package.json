@@ -1,8 +1,8 @@
 {
   "name": "root",
+  "private": true,
   "version": "1.0.0",
   "license": "MIT",
-  "private": true,
   "workspaces": [
     "./packages/*"
   ],
@@ -15,12 +15,12 @@
     "build:storybook": "yarn build && yarn lerna run build-storybook"
   },
   "devDependencies": {
-    "@commitlint/cli": "^11.0.0",
-    "@commitlint/config-conventional": "^11.0.0",
-    "commitizen": "^4.2.2",
+    "@commitlint/cli": "^13.2.0",
+    "@commitlint/config-conventional": "^13.2.0",
+    "commitizen": "^4.2.4",
     "cz-conventional-changelog": "^3.3.0",
-    "husky": "^4.3.5",
-    "lerna": "^3.22.1"
+    "husky": "^7.0.2",
+    "lerna": "^4.0.0"
   },
   "config": {
     "commitizen": {
@@ -33,6 +33,6 @@
     }
   },
   "dependencies": {
-    "prettier": "^2.2.1"
+    "prettier": "^2.4.1"
   }
 }
