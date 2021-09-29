@@ -11,7 +11,7 @@
     "build": "npx lerna run build",
     "test": "npx lerna run test",
     "publish": "yarn build && yarn lerna publish",
-    "commit": "yarn git-cz",
+    "commit": "npm run git-cz",
     "build:storybook": "yarn build && yarn lerna run build-storybook"
   },
   "devDependencies": {

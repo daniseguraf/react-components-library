@@ -1,9 +1,9 @@
 import React, { Fragment } from 'react';
 import { addDecorator } from '@storybook/react';
-import { withHTML } from '@whitespace/storybook-addon-html/react';
-import '!style-loader!css-loader!sass-loader!@danielseguraf/css/build/css/index.css';
+import { withHTML } from '@whitespace/storybook-addon-html';
+// import '!style-loader!css-loader!sass-loader!@danielseguraf/css/build/css/index.css';
 
-import './scss/index.scss';
+// import './scss/index.scss';
 
 export const parameters = {
   html: {
@@ -15,6 +15,6 @@ export const parameters = {
   },
 };
 
-export const decorators = [withHTML];
+// export const decorators = [withHTML];
 
 addDecorator((story) => <Fragment>{story()}</Fragment>);
